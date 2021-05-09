@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Forms action page</title>
+<link rel="stylesheet" href="w3.css">
+<body class="w3-container">
+<h1>Email was sent.</h1>
+<h2>I got your message :)</h2>
+<div class="w3-container w3-large w3-border" style="word-wrap:break-word">
+&nbsp;</div>
+
+<p>Thank you for emailing me. I will contact you as soon as possible.</p>
+
+<div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow">
+<p><strong></strong>  <a href="/php/default.asp" target="_blank"></a>.</p>
+</div>
+
+</body>
+</html>
