@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 #main {
-background-image:url('stars.gif');
+background:src="stars.gif"; margin-right: 50%; margin-left: 50%;
+margin-right: 50%;
+margin-left: 50%;
 }
 body {
 height: 100%;
