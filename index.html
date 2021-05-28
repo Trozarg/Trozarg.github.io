@@ -24,20 +24,38 @@ background-repeat: no-repeat;font-size:16px;}
 <body>
 <div class="bg">
 
-<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#111922;color:white;" id="mySidebar"><br>
-<a href="javascript:void(0)" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="x">Close menu</a>
-<div class="w3-container">
-<h2 class="w3-padding-64"><b>Fallbrook<br>LemonTech</b></h2>
-</div>
-<div class="w3-bar-block">
-<a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">Home</a>
-<a href="#showcase" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">Showcase</a>
-<a href="#services" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">Services</a>
-<a href="#lemontech" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">LemonTech</a>
-<a href="#packages" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">Packages</a>
-<a href="#contact" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_close()" class="w3-bar-item w3-button w3-hover-blue" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">Contact</a>
-</div>
-</nav>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#111922;color:white;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h2 class="w3-padding-64"><b>Fallbrook<br>LemonTech</b></h2>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+      <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Showcase</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Services</a>
+      <a href="#lemontech" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">LemonTech</a>
+      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Packages</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#111922; color:white;">
+    <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Fallbrook LemonTech</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px;margin-bottom:20px;padding-bottom: 0px; color:white;" id="showcase">
+      <h1 class="w3-jumbo"><b>Computer Repair</b></h1>
+    </div>
 
 <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#111922; color:white;">
 <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="if (!window.__cfRLUnblockHandlers) return false; w3_open()" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="☰">☰</a>
