@@ -188,8 +188,8 @@ background-repeat: no-repeat;font-size:16px;}
 
 </div>
 
-<div class="w3-container w3-padding-32" style="margin-top:75px;margin-left:0;margin-right:0;padding-right:58px;background-color:#ff8d00;color:white;"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS & LEMONS</a></p></div>
-</bg>
+<div class="w3-container w3-padding-32" style="margin-top:75px;margin-left:0;margin-right:0;padding-right:58px;background-color:#ff8d00;color:white;"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS & LEMONS</a> <br> <a class="w3-left" href="https://www.google.com/maps/place/Fallbrook+LemonTech+Computer+Repair/@33.328289,-117.1517597,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdaa68979693a121!8m2!3d33.3282668!4d-117.1495608?hl=en">5090 Avocado Park Lane Fallbrook CA, 92028</a></p>
+</div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="6fa87d6f1b285e3ac4a105a3-text/javascript">
 // Script to open and close sidebar
 function w3_open() {
@@ -209,7 +209,15 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(33.328289,-117.1517597),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 </script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6fa87d6f1b285e3ac4a105a3-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6563e4a96880ed8f',m:'de65a25fd1acce1fb2fa9224c3bfb347ff021756-1622167266-1800-AcFlWV4yH8Xma1BBb9tp2HSeKqeWuie+b23FLmpynaelmAEStRPGcNq+ZnpDPsbrw08BrvufolQhE3RjICZHuHCj9damgn7vbxTuCQhYPQdQDHtun/YsLD98TByLenygxw==',s:[0x9884650162,0x399a1ea8ca],}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6563e4a96880ed8f","version":"2021.5.2","r":1,"token":"8e83d83cee664862b6fabc5257e5a9f8","si":10}'></script>
+<script src="https://www.google.com/maps/place/Fallbrook+LemonTech+Computer+Repair/@33.328289,-117.1517597,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdaa68979693a121!8m2!3d33.3282668!4d-117.1495608?hl=en"></script>
 </body>
 </html>
