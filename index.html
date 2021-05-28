@@ -24,182 +24,186 @@ background-repeat: no-repeat;font-size:16px;}
 <body>
 <div class="bg">
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#111922;color:white;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-    <div class="w3-container">
-      <h2 class="w3-padding-64"><b>Fallbrook<br>LemonTech</b></h2>
-    </div>
-    <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-      <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Showcase</a>
-      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Services</a>
-      <a href="#lemontech" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">LemonTech</a>
-      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Packages</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Contact</a>
-    </div>
-  </nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#111922;color:white;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h2 class="w3-padding-64"><b>Fallbrook<br>LemonTech</b></h2>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Showcase</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Services</a>
+    <a href="#lemontech" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">LemonTech</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Packages</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Contact</a>
+  </div>
+</nav>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#111922; color:white;">
-    <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Fallbrook LemonTech</span>
-  </header>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#111922; color:white;">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Fallbrook LemonTech</span>
+</header>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:80px;margin-bottom:20px;padding-bottom: 0px; color:white;" id="showcase">
-      <h1 class="w3-jumbo"><b>Computer Repair</b></h1>
-
-    </div>
-
+<!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<!-- Medical Disclusure -->
-<div style="color:#ff8d00;">
-<h4>(Remote Work Only Until June 17th)<br>
-<h4>Medical Disclosure</h4>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px;margin-bottom:20px;padding-bottom: 0px; color:white;" id="showcase">
+    <h1 class="w3-jumbo"><b>Computer Repair</b></h1>
+</div>
 
-      <button class="w3-btn w3-xlarge w3-orange w3-hover-organge" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Click Here For Details</button>
-    </div>
 
-    <!--modoal id01 -->
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-top" style="background-color:#111922;color:#fff;">
-          <header class="w3-container w3-theme-l1">
-            <span onclick="document.getElementById('id01').style.display='none'"
-            class="w3-button w3-display-topright">&times;</span>
-            <h3>Hi,
-              <br>
-              My name is James Lemon, Owner and Founder of Fallbrook LemonTech. I'm reaching out just for a heads-up, until June 17th I will only be doing Remote Access Work i.e. over the phone, email, and virtual remote office connection.
+      <!-- Medical Disclusure -->
+      <div class="w3-padding-32"style="color:#ff8d00;" id="disclosure">
+      <h4>(Remote Work Only Until June 17th)<br>
+      <h4>Medical Disclosure</h4>
+      <div class="w3-padding-18">
+            <button class="w3-btn w3-xlarge w3-orange w3-hover-organge" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Click Here For Details</button>
+          </div>
 
-              On May 11th, I felt like I was coming down with something, May 17th I checked in to hospital with a COVID19 & Pneumonia diagnosis. May 22 I returned home I am recovering my energy and doctor says I should maitain a quarentine for a bit so this is that.
+          <!--modoal id01 -->
+          <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4 w3-animate-top w3-padding-32" style="background-color:#111922;color:#fff;">
+                <header class="w3-container w3-theme-l1">
+                  <span onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h3>Hi,
+                    <br>
+                    My name is James Lemon, Owner and Founder of Fallbrook LemonTech. I'm reaching out just for a heads-up, until June 17th I will only be doing Remote Access Work i.e. over the phone, email, and virtual remote office connection.
 
-              Until June 17th I will only be reachable via text or email. I can do most diagnositics and some fixes remotely by acessing your desktop via internet but that is up to each of you, I respect all your choices and understand for any concerns. Please don't hesitate to text or email me if you require help.
-              <br>
-              <br>
-              Best Regards and thank you, Sincerely,
-              <br>
-              James Lemon
-          </h3>
-          </header>
+                    On May 11th, I felt like I was coming down with something, May 17th I checked in to hospital with a COVID19 & Pneumonia diagnosis. May 22 I returned home I am recovering my energy and doctor says I should maitain a quarentine for a bit so this is that.
+
+                    Until June 17th I will only be reachable via text or email. I can do most diagnositics and some fixes remotely by acessing your desktop via internet but that is up to each of you, I respect all your choices and understand for any concerns. Please don't hesitate to text or email me if you require help.
+                    <br>
+                    <br>
+                    Best Regards and thank you, Sincerely,
+                    <br>
+                    James Lemon
+                </h3>
+                </header>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Services -->
+<div class="w3-container" id="services" style="margin-top:40px;color:white;">
+    <h1 class="w3-xxxlarge"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
+    <br>
+    <h3>Free Consultation Included</h3>
+    <h3>Computer</h3>
+    <ul><h3>
+    <li>Virus Removal</li>
+    <li>File/Data Recovery</li>
+    <li>Windows/Linux Install</li>
+    <li>Hardware Installation</li>
+    </h3>
+    </ul>
+
+    <h3>Web Development</h3>
+    <ul>
+    <h3>
+    <li>Site Design</li>
+    <li>Site Hosting/launch</li>
+    <li>Setup Business Online <br>i.e. Google My Business/Social Media</li>
+    <li>DIY Tutorials/Phone</li>
+    </h3>
+    </ul>
+
+  </div>
+  <!-- LemonTech -->
+  <div class="w3-container" id="lemontech" style="margin-top:40px;color:white;">
+    <h1 class="w3-xxxlarge"><b>LemonTech.</b></h1>
+    <hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+         <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/169994976_109966014533398_3221517546658901355_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=C3Uwxy_nC-gAX9tFqyo&_nc_ht=scontent-lax3-1.xx&oh=bf59e014d4e4541f8b2e84c14388dbab&oe=60BB51C4" style="width:100%;">
+        <div class="w3-container">
+          <h3>James Lemon</h3>
+          <p class="w3-opacity">Owner & Founder</p>
         </div>
       </div>
+    </div>
+    <br>
+    <br>
+
+  <!-- Packages / Pricing Tables -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="w3-container" id="packages" style="margin-top:145px;padding-top:130px; color:white;">
+    <h1 class="w3-xxxlarge"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32" style="background-color:#111922;color:white;">Hourly <br>(Free Consultation)</li>
+        <li class="w3-padding-16">System Check</li>
+        <li class="w3-padding-16">Good for multiple service repairs.</li>
+        <li class="w3-padding-16">2 week customer Call-back.</li>
+        <li class="w3-padding-16">Tech Advice/Consultation</li>
+        <li class="w3-padding-16">%10 OFF Next Service.</li>
+        <li class="w3-padding-16">
+          <h2>$ 25</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button id="callNow" class="w3-button w3-padding-large w3-hover-orange" style="background-color:#111922;color:white;"><a href="tel:760.450.3194">Call Now</a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32"style="background-color:#ff8d00">Service <br>(Free Consultation)</li>
+        <li class="w3-padding-16">System Check</li>
+        <li class="w3-padding-16">Good for individual Service Repairs.</li>
+        <li class="w3-padding-16">2 week Customer Call-back.</li>
+        <li class="w3-padding-16">Tech Advice/Consultation</li>
+        <li class="w3-padding-16">%20 OFF Next Service</li>
+        <li class="w3-padding-16">
+          <h2>$ 50</h2>
+          <span class="w3-opacity">per service</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button id="callNow" class="w3-button w3-padding-large w3-hover-black" style="background-color:#ff8d00;color:white;"><a href="tel:760.450.3194">Call Now</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact"  style="margin-top:75px;color:white;">
+    <h1 class="w3-xxxlarge"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
+    <form>
+    <h2><a href="tel:760.450.3194">Call</a><span>, </span><a href="mailto:lemonj103@gmail.com">Email</a><span> or <h1>Connect</h1></span><span> </span><a href="https://www.facebook.com/james.lemon.12914">Facebook</a><span>, </span><a href="https://www.twitter.com/_jameslemon">Twitter</a><span>, </span><a href="https://www.instagram.com/_jameslemon">Instagram.</a></h2>
+    </form>
+  </div>
+
+
+
+
+<!-- End page content -->
 </div>
 
-<div id="modal01" class="w3-modal " style="padding-top:0" onclick="if (!window.__cfRLUnblockHandlers) return false; this.style.display='none'" data-cf-modified-6fa87d6f1b285e3ac4a105a3-="">
-<span class="w3-button w3-xxlarge w3-display-topright">x</span>
-<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-<img id="img01" class="w3-image">
-<p id="caption"></p>
-</div>
-</div>
-
-<div class="w3-container" id="services" style="margin-top:40px;color:white;">
-<h1 class="w3-xxxlarge"><b>Services.</b></h1>
-<hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
-<br>
-<h3>Free Consultation Included</h3>
-<h3>Computer</h3>
-<ul><h3>
-<li>Virus Removal</li>
-<li>File/Data Recovery</li>
-<li>Windows/Linux Install</li>
-<li>Hardware Installation</li>
-</h3>
-</ul>
-<h3>Web Development</h3>
-<ul>
-<h3>
-<li>Site Design</li>
-<li>Site Hosting/launch</li>
-<li>Setup Business Online <br>i.e. Google My Business/Social Media</li>
-<li>DIY Tutorials/Phone</li>
-</h3>
-</ul>
-</div>
-
-<div class="w3-container" id="lemontech" style="margin-top:40px;color:white;">
-<h1 class="w3-xxxlarge"><b>LemonTech.</b></h1>
-<hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
-</div>
-
-<div class="w3-row-padding">
-<div class="w3-col m4 w3-margin-bottom">
-<div class="w3-light-grey">
-<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/169994976_109966014533398_3221517546658901355_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=C3Uwxy_nC-gAX9tFqyo&_nc_ht=scontent-lax3-1.xx&oh=bf59e014d4e4541f8b2e84c14388dbab&oe=60BB51C4" style="width:100%;">
-<div class="w3-container">
-<h3>James Lemon</h3>
-<p class="w3-opacity">Owner & Founder</p>
-</div>
-</div>
-</div>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<div class="w3-container" id="packages" style="margin-top:145px;padding-top:130px; color:white;">
-<h1 class="w3-xxxlarge"><b>Packages.</b></h1>
-<hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
-</div>
-<div class="w3-row-padding">
-<div class="w3-half w3-margin-bottom">
-<ul class="w3-ul w3-light-grey w3-center">
-<li class="w3-xlarge w3-padding-32" style="background-color:#111922;color:white;">Hourly <br>(Free Consultation)</li>
-<li class="w3-padding-16">System Check</li>
-<li class="w3-padding-16">Good for multiple service repairs.</li>
-<li class="w3-padding-16">2 week customer Call-back.</li>
-<li class="w3-padding-16">Tech Advice/Consultation</li>
-<li class="w3-padding-16">%10 OFF Next Service.</li>
-<li class="w3-padding-16">
-<h2>$ 25</h2>
-<span class="w3-opacity">per hour</span>
-</li>
-<li class="w3-light-grey w3-padding-24">
-<button id="callNow" class="w3-button w3-padding-large w3-hover-orange" style="background-color:#111922;color:white;"><a href="tel:760.450.3194">Call Now</a></button>
-</li>
-</ul>
-</div>
-<div class="w3-half">
-<ul class="w3-ul w3-light-grey w3-center">
-<li class="w3-xlarge w3-padding-32" style="background-color:#ff8d00">Service <br>(Free Consultation)</li>
-<li class="w3-padding-16">System Check</li>
-<li class="w3-padding-16">Good for individual Service Repairs.</li>
-<li class="w3-padding-16">2 week Customer Call-back.</li>
-<li class="w3-padding-16">Tech Advice/Consultation</li>
-<li class="w3-padding-16">%20 OFF Next Service</li>
-<li class="w3-padding-16">
-<h2>$ 50</h2>
-<span class="w3-opacity">per service</span>
-</li>
-<li class="w3-light-grey w3-padding-24">
-<button id="callNow" class="w3-button w3-padding-large w3-hover-black" style="background-color:#ff8d00;color:white;"><a href="tel:760.450.3194">Call Now</button></a>
-</li>
-</ul>
-</div>
-</div>
-
-<div class="w3-container" id="contact" style="margin-top:75px;color:white;">
-<h1 class="w3-xxxlarge"><b>Contact.</b></h1>
-<hr style="width:50px;border:5px solid #ff8d00" class="w3-round">
-<form>
-<h2><a href="tel:760.450.3194">Call</a><span>, </span><a href="/cdn-cgi/l/email-protection#432f262e2c2d2972737003242e222a2f6d202c2e">Email</a><span> or <h1>Connect</h1></span><span> </span><a href="https://www.facebook.com/james.lemon.12914">Facebook</a><span>, </span><a href="https://www.twitter.com/_jameslemon">Twitter</a><span>, </span><a href="https://www.instagram.com/_jameslemon">Instagram.</a></h2>
-</form>
-</div>
-
-</div>
-
-<div class="w3-container w3-padding-32" style="margin-top:75px;margin-left:0;margin-right:0;padding-right:58px;background-color:#ff8d00;color:white;"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS & LEMONS</a> <br> <a class="w3-left" href="https://www.google.com/maps/place/Fallbrook+LemonTech+Computer+Repair/@33.328289,-117.1517597,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdaa68979693a121!8m2!3d33.3282668!4d-117.1495608?hl=en">5090 Avocado Park Lane Fallbrook CA, 92028</a></p>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="6fa87d6f1b285e3ac4a105a3-text/javascript">
+<!-- W3.CSS Container -->
+<div class="w3-container w3-padding-32" style="margin-top:75px;margin-left:0;margin-right:0;padding-right:58px;background-color:#ff8d00;color:white;"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS & LEMONS</a></p></div>
+</bg>
+<script>
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -219,6 +223,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6fa87d6f1b285e3ac4a105a3-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6563e4a96880ed8f',m:'de65a25fd1acce1fb2fa9224c3bfb347ff021756-1622167266-1800-AcFlWV4yH8Xma1BBb9tp2HSeKqeWuie+b23FLmpynaelmAEStRPGcNq+ZnpDPsbrw08BrvufolQhE3RjICZHuHCj9damgn7vbxTuCQhYPQdQDHtun/YsLD98TByLenygxw==',s:[0x9884650162,0x399a1ea8ca],}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6563e4a96880ed8f","version":"2021.5.2","r":1,"token":"8e83d83cee664862b6fabc5257e5a9f8","si":10}'></script>
+
 </body>
 </html>
