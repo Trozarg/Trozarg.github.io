@@ -1,0 +1,16 @@
+/* LT.CSS 1.0 September 2021 by James Lemon (copyright 2021 fallbrooklemontech.com)*/
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extracted from W3.CSS by Jan Egil and Borge Refsnes */
+html{}
+body{}
+header{}
+#top-nav{text-decoration:none;}
+nav{} nav, a {} nav, li {} nav, li a {} .nav-list {} .list-item {}
+#home {} #home, h1 {} #home, p {}
+#about {} #about, h1 {} #about, p {}
+#tips {} #tips, h1 {} #tips, p {}
+#news {} #news, h1 {} #news, p {}
+#contact {} #contact, h1 {} #contact, p {}
+form {} form, li {} form, input {} form, button {}
+footer {} footer, p {}
+
