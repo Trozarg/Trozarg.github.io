@@ -5,7 +5,7 @@ html{}
 body{}
 header{}
 #top-nav{text-decoration:none;}
-nav{} nav, a {} nav, li {} nav, li a {} .nav-list {} .list-item {}
+nav{text-decoration:none;} nav, a {} nav, li {list-style-type:none;} nav, li a {} .nav-list {} .list-item {}
 #home {} #home, h1 {} #home, p {}
 #about {} #about, h1 {} #about, p {}
 #tips {} #tips, h1 {} #tips, p {}
