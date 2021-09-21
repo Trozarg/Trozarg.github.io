@@ -12,10 +12,10 @@ Tags: DESIGN | DEVELOP | COMMUNITY | OUTREACH |
 
 -->
 
-# Languages: HTML | CSS | javascript | PHP 
-# Tags: DESIGN | DEVELOP | COMMUNITY | OUTREACH | 
+# HTML | CSS | javascript | PHP 
+# DESIGN | DEVELOP | COMMUNITY | OUTREACH | 
 # Version 1.0 
-# Author: James Lemon
+# Author James Lemon
   
 # https://trozarg.github.io
 # https://www.fallbrooklemontech.com/
