@@ -13,10 +13,11 @@ Tags: DESIGN | DEVELOP | COMMUNITY | OUTREACH |
 -->
 
 # HTML | CSS | javascript | PHP 
-# DESIGN | DEVELOP | COMMUNITY | OUTREACH | 
+# DESIGN | DEVELOP | COMMUNITY | OUTREACH 
 # Version 1.0 
 # Author James Lemon
-  
+
+  # Site Directories 
 # https://trozarg.github.io
 # https://www.fallbrooklemontech.com/
 # www.fallbrooklemontech.com
