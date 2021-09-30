@@ -2,17 +2,52 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* End of extracted css */
 /* LT.CSS 1.0 September 2021 by James Lemon (copyright 2021 fallbrooklemontech.com)*/
-title, #page-title {}
-#body {}
-#header {}
-#h1
-#content-wrapper {}
-#content-1 {}
-#h2
-#article-1
-#footer {}
-#copyright {}
-.banner {}
-.title-header {}
-.content {}
-.content-text {}
+body  {
+display: block;
+height: auto;
+width: 100%;
+background-color: rgb(255, 255, 255);
+color: black;
+margin: 5px;}
+
+header {
+text-align: left;
+left: 0;
+top: 0;
+padding: 15px;}
+
+nav li {
+    list-style-type: none;
+    background-color: rgb(48, 46, 46);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+h1    {
+text-align: left;
+font: 18pt, bold;
+padding: 10px;}
+
+h2 {
+    text-align: left;
+    font: 15pt, bold;
+    padding: 10px;
+}
+
+#content-wrapper {
+box-align: left;
+position: absolute;
+padding: 25px;}
+		  
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding:10px; }
