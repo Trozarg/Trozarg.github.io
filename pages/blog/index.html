@@ -14,8 +14,13 @@
 </head>
     <body> 
         <header>
+            <script>
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                </script>
+                <p> Fallbrook CA, 92028 <span id='date-time'></span>.</p>
         <h1 id="header-title"> LEMONTECH | BLOG </h1>
-        <p id="tag-line"> Fallbrook California, USA </p>
+        <h2 id="tag-line"> Fallbrook California, USA </h2>
         <script>
             var dt = new Date();
             document.getElementById('date-time').innerHTML=dt;
