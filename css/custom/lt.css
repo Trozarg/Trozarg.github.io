@@ -41,13 +41,14 @@ h2 {
     padding: 10px;
 }
 
+
 #content-wrapper {
 box-align: left;
-position: absolute;
-padding: 25px;}
+padding: 20px;}
 		  
 footer {
-    position: absolute;
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+    padding:0.01em 16px;
     left: 0;
-    bottom: 0;
-    padding:10px; }
+    bottom: 0; }
