@@ -1,7 +1,5 @@
-/* Extracted from W3.CSS by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* End of extracted css */
 /* LT.CSS 1.0 September 2021 by James Lemon (copyright 2021 fallbrooklemontech.com)*/
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 body  {
 display: block;
 height: auto;
@@ -11,14 +9,18 @@ color: black;
 margin: 5px;}
 
 header {
-text-align: left;
-left: 0;
+display: block;
 top: 0;
-padding: 15px;}
+margin-left: 50px;
+margin-right: 50px}
+
+header, h1 {text-align: center;}
 
 nav li {
     list-style-type: none;
     background-color: rgb(48, 46, 46);
+    margin-left: 30px;
+    margin-right: 70px;
 }
 
 nav a {
@@ -32,7 +34,7 @@ nav a:link {
 }
 
 h1    {
-text-align: left;
+text-align: center;
 font: 18pt, bold;
 padding: 10px;}
 
@@ -45,9 +47,10 @@ h2 {
 
 #content-wrapper {
 box-align: left;
-padding: 20px;}
+padding: 20px;
+display:block; 
 
-/* 
+
 
 #page-heading {}
 .content {} .content-heading {} .content-text {}
@@ -56,7 +59,7 @@ padding: 20px;}
 #article-#001 {} #article-#002 {}
 #article-#003 {} #article-#004 {} #article-#005 {}
 
-*/
+
 		  
 footer {
     padding-top:32px!important;

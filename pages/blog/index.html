@@ -4,8 +4,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/custom/lt.css">
+    <!-- <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css"> --> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
@@ -14,7 +14,13 @@
 </head>
     <body> 
         <header>
-        <h1 id="header-title">Blog</h1>
+        <h1 id="header-title"> LEMONTECH | BLOG </h1>
+        <p id="tag-line"> Fallbrook California, USA </p>
+        <script>
+            var dt = new Date();
+            document.getElementById('date-time').innerHTML=dt;
+            </script>
+            <p>Current Date and Time is <span id='date-time'></span>.</p>
         <nav>
             <ul>
                 <li><a class="list-item" id="list-item-#001" href="https://www.fallbrooklemontech.com/#">Home</a></li>
@@ -27,7 +33,6 @@
     
         <div id="content-wrapper">
         <div class="content" id="content-#001">
-            <h2 id="page-heading">The Feed</h2>
             <h3 class="content-heading">Article 1</h3>
             <p class="content-text" id="article-#001">
             "Lorem ipsum dolor sit amet,
