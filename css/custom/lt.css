@@ -60,11 +60,17 @@ h2 {
     padding: 10px;
 }
 
-
 #content-wrapper {
-box-align: left;
-padding: 20px;
 display:block; 
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 25px;
+margin-bottom: 25px;
+height: 100px;
+overflow-y: auto;
+padding: 50px;
+}
+
 
 
 
