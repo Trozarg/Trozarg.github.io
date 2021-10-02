@@ -51,12 +51,14 @@ nav a:link {
 
 h1    {
 text-align: center;
-font: 18pt, bold;
+font-size: 48px;
+font-weight: bold;
 padding: 10px;}
 
 h2 {
     text-align: left;
-    font: 15pt, bold;
+    font-size: 24px;
+    font-weight: bold;
     padding: 10px;
 }
 
@@ -75,7 +77,7 @@ padding: 50px;
 
 
 #page-heading {}
-.content {} .content-heading {} .content-text {}
+.content {} .content-heading {} .content-text {font-size: 18px;}
 #content-#001 {} #content-#002 {} 
 #content-#003 {} #content-#004 {} #content-#005 {}
 #article-#001 {} #article-#002 {}
@@ -85,9 +87,8 @@ padding: 50px;
 		  
 footer {
     padding-top:32px!important;
-    padding-bottom:32px!important;
     padding:0.01em 16px;
-    left: 0;
-    bottom: 0; }
+    left: 0px;
+    bottom: 0px; }
 
-/* #copyright {} */
+ #copyright {} 
