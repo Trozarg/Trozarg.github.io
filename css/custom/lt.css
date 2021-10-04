@@ -1,52 +1,55 @@
-/* LT.CSS 1.0 September 2021 by James Lemon (copyright 2021 fallbrooklemontech.com)*/
+/* lt.css  September 2021 by James Lemon */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 body  {
 display: block;
-height: auto;
-width: 100%;
+height: 100%;
+width: auto;
 background-color: rgb(255, 255, 255);
 color: black;
 margin: 5px;}
 
 body, #banner {
-    display: block;
-    top: 0;
-    left: 0;
-    text-align: left;
-    margin: 5px;
+display: block;
+top: 0;
+left: 0;
+text-align: left;
+margin: 5px;
     }
 
 header {
 display: block;
 margin-left: 50px;
-margin-right: 50px}
+margin-right: 50px;}
 
 header, p {
-    top: 0px;
-    left: 0px;
-    box-align: left;
-    text-align: left;
-    margin-left: 5px;
-    margin-right: 5px; 
+top: 0px;
+left: 0px;
+box-align: left;
+text-align: left;
 }
 
-header, h1 {text-align: center;}
+header, #header-title {text-align: center;
+font-size: 96px;}
+
+header, #tag-line {text-align: center;
+font-size: 56px;}
 
 nav li {
-    list-style-type: none;
-    background-color: rgb(48, 46, 46);
-    margin-left: 30px;
-    margin-right: 70px;
+display: border-box;
+list-style-type: none;
+background-color:rgb(0, 0, 0);
+width: 100%;
+font-size: 24px;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+text-decoration: none;
+color: rgb(255, 255, 255);
 }
 
 nav a:link {
-    list-style-type: none;
-    text-decoration: none;
+list-style-type: none;
+text-decoration: none;
 }
 
 h1    {
@@ -56,39 +59,45 @@ font-weight: bold;
 padding: 10px;}
 
 h2 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
+text-align: left;
+font-size: 24px;
+font-weight: bold;
+padding: 10px;
 }
 
 #content-wrapper {
+box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}{
 display:block; 
 margin-left: 50px;
 margin-right: 50px;
 margin-top: 25px;
-margin-bottom: 25px;
-height: 100px;
+margin-bottom: 20em;
 overflow-y: auto;
-padding: 50px;
+height: auto;
+padding: 10px;
 }
 
+h1, #page-heading {}
+.content {
+    margin-left: 10em;
+    margin-right: 10em;
+    overflow-y: auto;} 
+.content-heading {} 
+.content-text {
+    font-size: 18px;}
+#content-#001 {
+    
+} #article-#001 {}
+#content-#002 {} #article-#002 {}
+#content-#003 {} #article-#003 {} 
+#content-#004 {} #article-#004 {} 
+#content-#005 {} #article-#005 {}
 
-
-
-#page-heading {}
-.content {} .content-heading {} .content-text {font-size: 18px;}
-#content-#001 {} #content-#002 {} 
-#content-#003 {} #content-#004 {} #content-#005 {}
-#article-#001 {} #article-#002 {}
-#article-#003 {} #article-#004 {} #article-#005 {}
-
-
-		  
 footer {
-    padding-top:32px!important;
-    padding:0.01em 16px;
-    left: 0px;
-    bottom: 0px; }
+padding-top:32px!important;
+padding:0.01em 16px;
+left: 0px;
+bottom: 0px; }
 
- #copyright {} 
+ footer, #copyright {left: 0px;
+bottom: 0px;} 
