@@ -62,8 +62,8 @@ font-weight: bold;
 padding: 10px;}
 
 #content-wrapper 
-{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}{
-display:block; 
+{box-sizing: border-box}*,*:before,*:after{box-sizing:inherit}{
+display: block; 
 margin-left: 50px;
 margin-right: 50px;
 margin-top: 25px;
