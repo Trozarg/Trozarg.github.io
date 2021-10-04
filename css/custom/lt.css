@@ -78,20 +78,17 @@ padding: 10px;
 }
 
 h1, #page-heading {}
-.content {
-    margin-left: 10em;
-    margin-right: 10em;
-    overflow-y: auto;} 
+.content {margin-left: 10em;
+		  margin-right: 10em;
+		  overflow-y: auto;} 
 .content-heading {} 
-.content-text {
-    font-size: 18px;}
-#content-#001 {
-    
-} #article-#001 {}
-#content-#002 {} #article-#002 {}
-#content-#003 {} #article-#003 {} 
-#content-#004 {} #article-#004 {} 
-#content-#005 {} #article-#005 {}
+.content-text {font-size: 18px;}
+#content-001 {}
+#article-001 {}
+#content-002 {} #article-002 {}
+#content-003 {} #article-003 {} 
+#content-004 {} #article-004 {} 
+#content-005 {} #article-005 {}
 
 footer {
 padding-top:32px!important;
