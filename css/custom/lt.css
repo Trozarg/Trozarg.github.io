@@ -2,35 +2,33 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 body::-webkit-scrollbar 
 {display: none;}
-body {-ms-overflow-style: none;
--webkit-scrollbar-width: none;}
+
 body 
-{display: block;
-height: 100%;
-width: auto;
+{-ms-overflow-style: none;
+--webkit-scrollbar-width: none;}
+
+body 
+{height: 100%;
+width: 100%;
 background-color: rgb(255, 255, 255);
 color: black;
-margin: 0px;
+margin: 0;
 overflow-y: scroll;}
 
-
-
 header 
-{display: block; 
-top: 0px;
+{top: 0px;
 left: 0px;
-box-align: left;
-text-align: center;}
+right: 0px;}
 
+header, #header-title {font-size: 78px;}
+header, #tag-line {font-size: 36px;}
 
-nav, ul
-{display: block;
-text-align: center;
-list-style-type: none;
+nav, ul li
+{list-style-type: none;
 background-color:rgb(0, 0, 0);
 font-size: 24px;}
 
-nav a 
+nav li a
 {text-decoration: none;
 color: rgb(255, 255, 255);}
 
@@ -40,25 +38,28 @@ text-decoration: none;}
 
 h1    
 {text-align: center;
-font-weight: bold;}
+font-weight: bold;
+font-size: 78px;}
+
+h3 {font-size: 36px;}
 
 h2 
-{text-align: left;
-font-weight: bold;} 
+{text-align: center;
+font-weight: bold;
+font-size: 56px;} 
+
+p {font-size: 24px;}
 
 body, #content-wrapper 
-{display: block; 
-height: auto;
+{height: inherit;
 width: 100%;
 padding: 10px;}
 
-
-
-footer {
-padding-top:32px!important;
+footer 
+{padding-top:32px!important;
 padding:0.01em 16px;
 left: 0px;
-bottom: 0px; }
+bottom: 0px;}
 
 footer, #copyright 
 {left: 0px;
