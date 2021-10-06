@@ -73,9 +73,9 @@ h1, #page-heading
 .content  
 {overflow-y: auto;} 
 .content, h3 .content-heading 
-{font-size: 82px;} 
+{font-size: 24px;} 
 .content-text {}
-{font-size: 78px;}
+{font-size: 24px;}
 #content-001 
 {} 
 #article-001 
