@@ -1,44 +1,33 @@
 /* lt.css  September 2021 by James Lemon */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-body  
+body::-webkit-scrollbar 
+{display: none;}
+body {-ms-overflow-style: none;
+-webkit-scrollbar-width: none;}
+body 
 {display: block;
 height: 100%;
 width: auto;
 background-color: rgb(255, 255, 255);
 color: black;
-margin: 5px;}
+margin: 0px;
+overflow-y: scroll;}
 
-body, #banner 
-{display: block;
-top: 0;
-left: 0;
-text-align: left;
-margin: 5px;}
+
 
 header 
-{display: block;
-margin-left: 50px;
-margin-right: 50px;}
-
-header, p 
-{top: 0px;
+{display: block; 
+top: 0px;
 left: 0px;
 box-align: left;
-text-align: left;}
+text-align: center;}
 
-header, #header-title 
-{text-align: center;
-font-size: 96px;}
 
-header, #tag-line 
-{text-align: center;
-font-size: 56px;}
-
-nav li 
-{display: border-box;
+nav, ul
+{display: block;
+text-align: center;
 list-style-type: none;
 background-color:rgb(0, 0, 0);
-width: 100%;
 font-size: 24px;}
 
 nav a 
@@ -51,51 +40,19 @@ text-decoration: none;}
 
 h1    
 {text-align: center;
-font-size: 48px;
-font-weight: bold;
-padding: 10px;}
+font-weight: bold;}
 
 h2 
 {text-align: left;
-font-size: 24px;
-font-weight: bold;
-padding: 10px;}
+font-weight: bold;} 
 
 body, #content-wrapper 
 {display: block; 
-overflow-y: auto;
 height: auto;
 width: 100%;
 padding: 10px;}
 
-h1, #page-heading 
-{}
-.content  
-{overflow-y: auto;} 
-.content, h3 .content-heading 
-{font-size: 24px;} 
-.content-text {}
-{font-size: 18px;}
-#content-001 
-{} 
-#article-001 
-{}
-#content-002 
-{}
-#article-002 
-{}
-#content-003 
-{} 
-#article-003 
-{} 
-#content-004 
-{} 
-#article-004 
-{} 
-#content-005 
-{} 
-#article-005 
-{}
+
 
 footer {
 padding-top:32px!important;
