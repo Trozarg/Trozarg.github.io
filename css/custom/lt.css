@@ -1,0 +1,73 @@
+/* lt.css  September 2021 by James Lemon */
+
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+body::-webkit-scrollbar 
+{display: none;}
+
+body 
+{-ms-overflow-style: none;
+--webkit-scrollbar-width: none;}
+
+body 
+{height: 100%;
+width: 100%;
+background-color: rgb(255, 255, 255);
+color: black;
+margin: 0px;
+overflow-y: scroll;}
+
+header 
+{top: 0px;
+left: 0px;}
+
+#header-title {font-size: 78px;}
+#tag-line {font-size: 36px; padding-left: 7px;}
+
+#memo-tag
+{font-size: 24px;
+background-color: rgb(0,0,0);
+left: 0px;
+padding-left: 10px;}
+
+#memo-tag a
+{text-decoration: none;
+color: rgb(253, 253, 253);}
+
+#memo-tag a:link 
+{list-style-type: none;
+text-decoration: none;}
+
+h1    
+{text-align: center;
+font-weight: bold;
+font-size: 78px;}
+
+h3 {font-size: 36px;}
+
+h2 
+{text-align: center;
+font-weight: bold;
+font-size: 56px;} 
+
+#EST
+{font-size: 32px;
+text-align: center;}
+
+p {font-size: 24px;
+text-align: left;}
+
+#content-wrapper 
+{height: inherit;
+width: 100%;
+padding: 10px;}
+
+footer 
+{padding-top:32px!important;
+padding:0.01em 16px;
+left: 0px;
+bottom: 0px;}
+
+footer, #copyright 
+{left: 0px;
+bottom: 0px;}
