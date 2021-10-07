@@ -5,13 +5,23 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <!-- <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/custom/lt.css"> -->
-    <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css">
+    <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/custom/lt.css"> 
+    <!-- <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
     <title>Blog</title>
+<style>
+@media only screen and (min-width: 412px)
+{html body #content-wrapper {height: 100%; width: auto;} 
+#header-title {margin-left: 0px; margin-right: 0px; font-size: 42px; text-align: left;}
+#tag-line {font-size: 24px;} #memo-tag a a:link {font-size: 12px; text-align: left; padding-left: 0px; padding-right: 1px;} #date-time {height: 100%; width: auto; text-align: left; padding: 0px; margin: 0px;}
+.content-heading {font-size: 18px;} .content-text {font-size: 12px;}
+footer #copyright {font-size: 12px;}
+}
+
+</style>
 
 </head>
 
@@ -20,11 +30,8 @@
         
     <header>
         <h1 id="header-title">LEMONTECH | BLOG</h1>
-        <p id="EST">EST. 2021</p>
         <h3 id="tag-line">Fallbrook California, USA</h3>
-        <h3 id="memo-tag"><a href="https://www.fallbrooklemontech.com/#">Designs By James Lemon. <span id='date-time'></span>.</p></p>
-
-</a></h3>
+        <h3 id="memo-tag"><a href="https://www.fallbrooklemontech.com/#">Designs By James Lemon. <br><span id='date-time'></span>.</p></p></a></h3>
 <script>
 var dt = new Date();
 document.getElementById('date-time').innerHTML=dt;
