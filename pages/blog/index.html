@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <!-- <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/custom/lt.css"> -->
-     <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css"> 
+    <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/custom/lt.css"> 
+    <!-- <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/custom/lt.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
@@ -19,12 +19,15 @@
         
     <header>
         <h1 id="header-title">LEMONTECH | BLOG</h1>
+        <p id="EST">EST. 2021</p>
         <h3 id="tag-line">Fallbrook California, USA</h3>
-        <nav>
-            <ul>
-                <li><a href="https://www.fallbrooklemontech.com/#">Designs By Fallbrook LemonTech</a></li>
-            </ul>
-        </nav>
+        <h3 id="memo-tag"><a href="https://www.fallbrooklemontech.com/#">Designs By James Lemon. <span id='date-time'></span>.</p></p>
+
+</a></h3>
+<script>
+var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+</script>
     </header>
     
     <div id="content-wrapper">
@@ -126,7 +129,7 @@
              mollit anim id est laborum."
         </p>
     </div>
-<div class="content">
+    <div class="content">
         <h3 class="content-heading">Article 5</h3>
         <p class="content-text">
             "Lorem ipsum dolor sit amet,
@@ -143,8 +146,8 @@
              sunt in culpa qui officia deserunt 
              mollit anim id est laborum."
         </p>
-    </div>
-<div class="content">
+        </div>
+        <div class="content">
         <h3 class="content-heading">Article 5</h3>
         <p class="content-text">
             "Lorem ipsum dolor sit amet,
@@ -161,7 +164,7 @@
              sunt in culpa qui officia deserunt 
              mollit anim id est laborum."
         </p>
-    </div>
+        </div>
     </div>
                     
             <footer><p id="copyright"> © 2021 Fallbrook LemonTech | All rights Reserved. </p></footer>

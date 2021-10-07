@@ -12,7 +12,7 @@ body
 width: 100%;
 background-color: rgb(255, 255, 255);
 color: black;
-margin: 0;
+margin: 0px;
 overflow-y: scroll;}
 
 header 
@@ -20,21 +20,24 @@ header
 left: 0px;
 right: 0px;}
 
-header, #header-title {font-size: 78px;}
-header, #tag-line {font-size: 36px;}
+#header-title {font-size: 78px;}
+#tag-line {font-size: 36px; padding-left: 7px;}
 
-nav, ul li
-{list-style-type: none;
-background-color:rgb(0, 0, 0);
-font-size: 24px;}
+#memo-tag
+{font-size: 24px;
+background-color: rgb(0,0,0);
+left: 0px;
+padding-left: 10px;}
 
-nav li a
+#memo-tag a
 {text-decoration: none;
-color: rgb(255, 255, 255);}
+color: rgb(253, 253, 253);}
 
-nav a:link 
+#memo-tag a:link 
 {list-style-type: none;
 text-decoration: none;}
+
+#date-time {padding-left: 5em;}
 
 h1    
 {text-align: center;
@@ -48,9 +51,14 @@ h2
 font-weight: bold;
 font-size: 56px;} 
 
-p {font-size: 24px;}
+#EST
+{font-size: 32px;
+text-align: center;}
 
-body, #content-wrapper 
+p {font-size: 24px;
+text-align: left;}
+
+#content-wrapper 
 {height: inherit;
 width: 100%;
 padding: 10px;}
