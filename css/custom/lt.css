@@ -1,7 +1,7 @@
 /* lt.css  September 2021 by James Lemon */
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-@media only screen and (min-width: 412px) and (max-width: 767px){body {left:0px; right:0px;margin:0px;} #content-wrapper {width: 100%; left: 0px; right: 0px;} #header-title {margin-left: 10px; margin-right: 10px; font-size: 36px;}}
+@media only screen and (min-width: 412px) and (max-width: 767px){body {left:0px; right:0px;margin:0px;} #content-wrapper {width: 100%; left: 0px; right: 0px;} #header-title {margin-left: 10px; margin-right: 10px;}}
 body::-webkit-scrollbar 
 {display: none;}
 
@@ -22,7 +22,7 @@ header
 left: 0px;
 right: 0px;}
 
-#header-title {font-size: 36px;}
+#header-title {font-size: 78px;}
 #tag-line {font-size: 36px; padding-left: 7px;}
 
 #memo-tag
