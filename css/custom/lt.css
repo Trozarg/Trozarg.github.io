@@ -1,6 +1,7 @@
 /* lt.css  September 2021 by James Lemon */
 
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html
+{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 body::-webkit-scrollbar 
 {display: none;}
@@ -43,7 +44,8 @@ h1
 font-weight: bold;
 font-size: 78px;}
 
-h3 {font-size: 36px;}
+h3 
+{font-size: 36px;}
 
 h2 
 {text-align: center;
