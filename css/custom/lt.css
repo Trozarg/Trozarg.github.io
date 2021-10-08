@@ -50,24 +50,31 @@ h2
 font-weight: bold;
 font-size: 56px;} 
 
-#EST
-{font-size: 32px;
-text-align: center;}
-
-p {font-size: 24px;
-text-align: left;}
-
 #content-wrapper 
 {height: inherit;
-width: 100%;
+width: auto;
 padding: 10px;}
 
-footer 
-{padding-top:32px!important;
-padding:0.01em 16px;
-left: 0px;
-bottom: 0px;}
+.padding 
+{padding:0 8px;}
 
-footer, #copyright 
-{left: 0px;
+.col
+{float:left;width:19.3333%;
+margin-bottom:16px!important;
+background-color:rgb(177, 174, 174)}
+
+.container 
+{padding:0.01em 16px;}
+
+.container:after .container:before 
+{content:"";display:table;clear:both}
+
+.content-text 
+{font-size: 24px;
+text-align: left;}
+
+#footer, #copyright
+{padding-top:12.6em!important;
+padding:0.001em 20px;
+left: 0px;
 bottom: 0px;}
