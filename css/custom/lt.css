@@ -25,7 +25,7 @@ html {box-sizing:border-box}*,*:before,*:after {box-sizing:inherit}*,*{margin:0p
 #footer {bottom:0px;}
 #footer-margin {margin:0px;}
 #footer-padding {padding:0px;}
-#social {text-align:left;padding-bottom:0px;margin:0px;}
+#social {padding-bottom:0px;margin:0px;}
 #copyright {text-align:left;color:rgb(0, 0, 0);padding-top:0px;}
 .lt-padding-none {padding:0px;}
 .lt-margin-none {margin:0px;}
