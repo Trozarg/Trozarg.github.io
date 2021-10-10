@@ -1,8 +1,8 @@
 /* lt.css September 2021 by James Lemon */
 /* HTML TEMPLATE DEFAULTS */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}*,*{margin:0;}
-#body::-webkit-scrollbar{display:none;}#body{-ms-overflow-style:none;--webkit-scrollbar-width: none;}
-#body{display:block;height:100%;width:100%;left:0;right:0;margin:0;font-family: "Poppins", sans-serif;}
+#body::-webkit-scrollbar{display:none;}#body{-ms-overflow-style:none;--webkit-scrollbar-width:none;}
+#body{display:block;height:100%;width:100%;left:0;right:0;margin:0;font-family:"Poppins",sans-serif;}
 #header{padding-left:6%;padding-right:10%;padding-top:5%;padding-bottom:5%;left:0;right:0;top:0;}
 #header-title{font-size:48px;font-family:inherit;}
 #header-tag{font-size:18px;font-family:inherit;}
@@ -35,7 +35,9 @@ ul li{text-decoration:none;list-style-type:none;}
 .lt-bottom{margin:0;left:0;right:0;bottom:0;}
 /* Margin */
 .lt-margin-none{margin:0;}
-.lt-margin-5{margin:5%;}.lt-margin-left-5{margin-left:5%;}.lt-margin-right-5{margin-right:5%;}.lt-margin-top-5{margin-top:5%;}.lt-margin-bottom-5{margin-bottom:5%;} 
+.lt-margin-5{margin:5%;}.lt-margin-left-5{margin-left:5%;}
+.lt-margin-right-5{margin-right:5%;}.lt-margin-top-5{margin-top:5%;}
+.lt-margin-bottom-5{margin-bottom:5%;} 
 .lt-margin-10{margin:10%;}.lt-margin-left-10{margin-left:10%;}.lt-margin-right-10{margin-right:10%;}.lt-margin-top-10{margin-top:10%}.lt-margin-bottom-10{margin-bottom:10%;}
 .lt-margin-20{margin:20%;}.lt-margin-left-20{margin-left:20%;}.lt-margin-right-20{margin-right:20%;}.lt-margin-top-20{margin-top:20%;}.lt-margin-bottom-20{margin-bottom:20%;}
 .lt-margin-25{margin:25%;}.lt-margin-left-25{margin-left:25%}.lt-margin-right-25{margin-right:25%}.lt-margin-top-25{margin-top:25%;}.lt-margin-bottom-25{margin-bottom:25%;}
