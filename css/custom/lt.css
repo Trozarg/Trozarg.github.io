@@ -3,33 +3,33 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}*,*{margin:0;}
 #body::-webkit-scrollbar{display:none;}#body{-ms-overflow-style:none;--webkit-scrollbar-width:none;}
 #body{display:block;height:100%;width:100%;left:0;right:0;margin:0;font-family:"Poppins",sans-serif;}
-#header{padding-left:6%;padding-right:10%;padding-top:5%;padding-bottom:5%;left:0;right:0;top:0;}
-#header-title{font-size:48px;font-family:inherit;}
-#header-tag{font-size:18px;font-family:inherit;}
-#footer{padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:5%;margin:0;bottom:0;}*,*
+#header{left:0;right:0;top:0;}
+#footer{margin:0;bottom:0;}*,*
 #footer .link a li{list-style-type:none;text-decoration:none;}
 #copyright{text-align:left;}
 /* Contained Element IDS */
-#Mission{padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:5%;margin:0px;} 
+#Mission{margin:0px;} 
 ul li{text-decoration:none;list-style-type:none;}
-#Services{padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:5%;margin:0px;}
-#Cost{padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:5%;margin:0px;}
-#Contact{padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:5%;margin:0px;}
+#Services{margin:0px;}
+#Cost{margin:0px;}
+#Contact{margin:0px;}
+#tag-line a, a:link{text-decoration: none;color:black;}
+.lt-no-decoration a a:link{text-decoration:none;}.lt-no-list-decoration{list-style-type:none;}
 /* Contained Element Class */
 .lt-container{background-color:inherit;}
 .lt-content{color:inherit;}
 .lt-swipe-container{padding:0px;margin:0px;}
 .lt-swipe-content{padding:0px;margin:0px;}
 /* Headings */
-.lt-h1{font-size:48px;font-family:inherit;}
-.lt-h2{font-size:36px;font-family:inherit;}
-.lt-h3{font-size:24px;font-family:inherit;}
-.lt-h4{font-size:20px;font-family:inherit;}
-.lt-h5{font-size:18px;font-family:inherit;}
+.lt-h1{font-size:78px;font-family:inherit;}
+.lt-h2{font-size:56px;font-family:inherit;}
+.lt-h3{font-size:48px;font-family:inherit;}
+.lt-h4{font-size:36px;font-family:inherit;}
 /* Text */
-.lt-text{font-size:15px;font-family:inherit;}
-.lt-smalltext{font-size:12px;font-family:inherit;}
-.lt-smallest-text{font-size:8px;font-family:inherit;}
+.lt-text{font-size:28px;font-family:inherit;}
+.lt-small-text{font-size:24px;font-family:inherit;}
+.lt-smaller-text{font-size:18px;font-family:inherit;}
+.lt-smallest-text{font-size:15px;font-family:inherit;}
 /* Position Styles */
 .lt-top{margin:0;left:0;right:0;top:0;}
 .lt-bottom{margin:0;left:0;right:0;bottom:0;}
