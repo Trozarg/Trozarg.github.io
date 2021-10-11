@@ -21,13 +21,13 @@ ul li{text-decoration:none;list-style-type:none;}
 .lt-swipe-container{padding:0px;margin:0px;}
 .lt-swipe-content{padding:0px;margin:0px;}
 /* Headings */
-.lt-h1{font-size:78px;font-family:inherit;}
-.lt-h2{font-size:56px;font-family:inherit;}
-.lt-h3{font-size:48px;font-family:inherit;}
-.lt-h4{font-size:36px;font-family:inherit;}
+.lt-h1{font-size:56px;font-family:inherit;}
+.lt-h2{font-size:48px;font-family:inherit;}
+.lt-h3{font-size:36px;font-family:inherit;}
+.lt-h4{font-size:28px;font-family:inherit;}
 /* Text */
-.lt-text{font-size:28px;font-family:inherit;}
-.lt-small-text{font-size:24px;font-family:inherit;}
+.lt-text{font-size:24px;font-family:inherit;}
+.lt-small-text{font-size:20px;font-family:inherit;}
 .lt-smaller-text{font-size:18px;font-family:inherit;}
 .lt-smallest-text{font-size:15px;font-family:inherit;}
 /* Position Styles */
