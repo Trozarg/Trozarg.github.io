@@ -8,7 +8,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 #body::-webkit-scrollbar{display:none;}#body{-ms-overflow-style:none;--webkit-scrollbar-width:none;}
 #body{display:block;height:100%;width:auto;left:0;right:0;margin:0;font-family:"Poppins",sans-serif;}
 #header{left:0;right:0;top:0;}
-#header #header-title, a {color:black;}
+#header #header-title, a {color:inherit;}
 #nav a a:link ul li{display:inline-block;text-decoration:none;list-style-type:none;}
 #footer{color:white;margin:0;bottom:0;}*,*
 #footer a a:link li{list-style-type:none;text-decoration:none;}
