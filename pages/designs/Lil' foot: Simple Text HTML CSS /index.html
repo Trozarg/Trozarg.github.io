@@ -1,6 +1,8 @@
 <!DOCTYPE html>
     <html lang="en">
-    <head>
+
+        <head>
+               
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/lt.css"> 
@@ -10,157 +12,150 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
             <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
-            <title>Fallbrook LemonTech</title>    
-            <style>
+        <title>Fallbrook LemonTech</title>
+
+        </head>
+
+        <style>
+
+            #body    {
+             animation-name: backgroundColorPalette;
+             animation-duration: 30s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+            }
+
+            #body {color: rgb(255, 255, 255);
+                  font-weight: bold;}
+                  #body, #header-title {color: white;}
+
+            #footer a {color:rgb(0, 0, 0);}
             
-                .grid-container {
+            .grid-container {
                     display: inline-grid;
                     grid-template-columns: auto auto auto;
                     grid-gap:10px;
-                    background-color: white;
-                    padding: 10px;
-                }
+                    
+                    padding-left: 10px; padding-right: 10px;
+                    }
     
-                .grid-container > div {
-                    background-color: rgba(255,255,255,0.8);
-                    border: 1px solid white;
+            .grid-container > div {
                     text-align: center;
                     font-size: 30px;
                 }
-                .mySlides {display:none;}
-                .text {vertical-align: middle;}
                 
-                .slideshow-container {
+            .mySlides {display:none;}
+                
+                
+            .slideshow-container {
                     max-width: 1000px;
-                    position: relative;
+                    position: inline-block;
                     left:25%;
-                    right:40%;
-                    margin:auto;
-                    margin-top: 7%;
-                    margin-bottom:6%;
+                    right:30%;
+                    margin-left:24.5%;
+                    margin-right:20%;
+                    margin-top:20%;
+                    margin-bottom:10%;
                 }
-    
-                .prev, .next {
-                    cursor: pointer;
-                    position: absolute;
-                    width: auto;
-                    padding: 16px;
-                    margin-top: -22px;
-                    color: white;
-                    font-weight: bold;
-                    font-size: 18px;
-                    transition: 0.6s ease;
-                    border-radius: 0 3px 3px 0;
-                    user-select: none;
-                }
-    
-                .next {
-                    right:0;
-                    border-radius: 3px 0 0 3px;
-                }
-    
-                .prev:hover, .next:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                }
-    
-                .text {
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    bottom: 8px;
-                    width: 100%;
-                    text-align: center;
-                }
-    
             
-    
-                .dot {
+            
+            .dot {
                     cursor: pointer;
                     height: 15px;
                     width: 15px;
                     left:25%;
                     right:40%;
                     margin: 0 2px;
-                    background-color: #bbb;
+                    background-color: rgb(255, 255, 255);
                     border-radius: 50%;
                     display: inline-block;
                     transition: background-color 0.6s ease;
                 }
     
-                .active, .dot:hover {
+            .active, .dot:hover {
                     background-color: #717171;
                 }
     
-                /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
+            /* Fading animation */
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+             }
     
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
+             @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
     
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 412px) {
-      .prev, .next,.text {font-size: 11px}
-    }
-    
-            </style>
-        </head>
-    <!-- Main Content -->
-    <div id="body">
-        <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-20">
-            <div id="header-title" class="lt-h1"><a href="#Mission">Fallbrook LemonTech</a></div>
-            <div id="tag-line" class="lt-text"><a href="#Mission"> Design </a>|<a href="#Services"> Develop </a>|<a href="#Cost"> Maintain </a>|<a href="#Contact"> Consult </a><span id="os" class="lt-padding-right-5"></span> Windows | MacOS | Linux</div>
-        </div>
-        </div>
-        <!-- Header Ends -->
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            @keyframes backgroundColorPalette {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #99d67b;
+  }
+  50% {
+    background: #b7da45;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+
+        </style>
         
-        <!-- Content Begins -->
+            </head>
+         <!-- Main Content -->
+            <div id="body">
+            <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10">
+            <div id="header-title" class="lt-h4"><a href="#Mission">Fallbrook LemonTech</a></div>
+            <div id="tag-line" class="lt-small-text"><a href="#Mission"> Design </a>|<a href="#Services"> Develop </a>|<a href="#Cost"> Maintain </a>|<a href="#Contact"> Consult </a><span id="os" class="lt-padding-right-5"></span> Windows <span style="color:black;">|</span> MacOS <span style="color:black;">|</span> Linux</div>
+            </div>
+            
+            <!-- Header Ends -->
+        
+            <!-- Content Begins -->
             
             <div class="slideshow-container grid-container">
-                <div class="mySlides fade"><div class="lt-h1">Mission.</div><div class="lt-text">
+                <div class="mySlides fade"><div class="lt-h4" style="color:black;">Mission.</div><div class="lt-text">
                     To help make tech do what you want. 
                     Design your vision, develop your site
                     and broadcast your organization.</div></div>
-                <div class="mySlides fade"><div class="lt-h2">Objective</div>
+                <div class="mySlides fade"><div class="lt-h4" style="color:black;">Objective</div>
                 <div class="lt-text">
                 To design, develop, and maintain sites,
                 applications, programs and infastructure. 
                 For personal or organizations use. </div></div>
-                <div class="mySlides fade"><div class="lt-h2">LemonTech</div>
+                <div class="mySlides fade"><div class="lt-h4" style="color:black;">LemonTech</div>
                 <div class="lt-text">
                 Hi my name is James Lemon, I am a 31 year old cyborg.
                 Let me develop tech that will work, for you.</div>
             </div></div>
-            </div>
+        
             
-            <a class="prev"
-            onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
     
             <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span></div>
+
+            
     
-        <div id="Services" class="lt-margin-none lt-padding-20 lt-container">
-            <div class="lt-h1">Services</div>
-            <div class="lt-text"></div>
-            <div class="lt-h2">Web</div>
-            <ul><div class="lt-text">
+            <div id="Services" class="lt-margin-none lt-padding-top-20 lt-padding-left-20 lt-padding-right-20 lt-padding-bottom-10 lt-container">
+                <div class="lt-h5" style="color:white; padding-bottom:20px; font-size:48px;">Services</div>
+                <div class="lt-text"></div>
+            <div class="lt-h5" style="color:black;" >Web</div>
+            <ul><div class="lt-small-text">
                 <li>Site Design</li>
                 <li>Site Development</li>
                 <li>Online Social Media Presence<br>
@@ -168,8 +163,8 @@
                 <li>Remote Walkthroughs</li>
                 </div>
                 </ul>
-                <div class="lt-h2">Desktop | Laptop | Macbook</div>
-                <div class="lt-text">
+                <div class="lt-h5" style="color:black;">Desktop | Laptop | Macbook</div>
+                <div class="lt-small-text">
                 <ul>
                 <li>Virus Removal</li>
                 <li>Data Recovery</li>
@@ -180,45 +175,42 @@
                 </div>
             
 
-<div id="Cost" class="lt-margin-none lt-padding-20 lt-container">
-                <div class="lt-h1">Pricing</div>
-                <div class="lt-text">$25 an hour.</div>
-                <div class="lt-h2">Consultation Included</div>
-                    <div class="lt-text">
+            <div id="Cost" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10 lt-container">
+                <div class="lt-h5" style="color:black; padding-bottom:20px; font-size:48px">Pricing</div>
+                <div class="lt-small-text">$25 an hour.</div>
+                <div class="lt-h5">Consultation Included</div>
+                    <div class="lt-small-text">
                         <ul>
                             <li>System Check</li>
                             <li>Good for multiple services.</li>
                             <li>Customer Call-back</li>
                         </ul>
                     </div>
-                 <div class="lt-h2">Call Now</div>
+                 <div class="lt-h5" >Call Now</div>
                 </div>
         
 
-        <div id="Contact" class="lt-margin-none lt-padding-20 lt-container">
-            <div class="lt-h1">Contact</div>
+            <div id="Contact" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-20 lt-container">
+            <div class="lt-h5">Contact</div>
                 <div class="lt-text"></div>
-                <div class="lt-h2">Location</div>
-                <div class="lt-h2">Connect</div>
-        </div>
+                <div class="lt-h5">Location</div>
+                <div class="lt-h5">Connect</div>
+            </div>
            
         
-        <!-- End of Main Content -->
-        <div id="footer">
-    <div class="lt-link">
-    <a href="https://www.facebook.com/james.lemon.12914">Facebook </a><a href="https://www.twitter.com/_jameslemon">Twitter </a><a href="https://www.instagram.com/_jameslemon">Instagram </a>
-</div>
-</div>
-        <div alt="copyright 2021 fallbrook lemontech all 
-        rights reserved">© 2021 Fallbrook LemonTech | All rights reserved</div>
-        
-       <script>
+            <!-- End of Main Content -->
+            <div id="footer">
+              <a href="https://www.facebook.com/james.lemon.12914">Facebook </a><a href="https://www.twitter.com/_jameslemon">Twitter </a><a href="https://www.instagram.com/_jameslemon">Instagram </a>
+            </div>
+            
+            <div alt="copyright 2021 fallbrook lemontech all 
+            rights reserved">© 2021 Fallbrook LemonTech | All rights reserved</div>
+            </div>
+            <script>
             var slideIndex = 1;
             showSlides(slideIndex);
             
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
+            
             
             function currentSlide(n) {
               showSlides(slideIndex = n);
@@ -240,7 +232,6 @@
               dots[slideIndex-1].className += " active";
             }
             </script>     
-        
-      <!-- End of Footer -->
-     <!-- End of Body -->
-</html> <!-- End of Site -->
+</div>
+<!-- End of Site -->
+</html> 

@@ -10,18 +10,19 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 #header{left:0;right:0;top:0;}
 #header #header-title, a {color:black;}
 #nav a a:link ul li{display:inline-block;text-decoration:none;list-style-type:none;}
-#footer{margin:0;bottom:0;}*,*
+#footer{color:white;margin:0;bottom:0;}*,*
 #footer a a:link li{list-style-type:none;text-decoration:none;}
 /* Headings */
-.lt-h1{font-size:56px;}
-.lt-h2{font-size:48px;}
-.lt-h3{font-size:36px;}
-.lt-h4{font-size:28px;}
+.lt-h1{font-size:78px;}
+.lt-h2{font-size:64px;}
+.lt-h3{font-size:56px;}
+.lt-h4{font-size:48px;}
+.lt-h5{font-size:38px;}
 /* Text */
-.lt-text{font-size:24px;}
-.lt-small-text{font-size:18px;}
-.lt-smaller-text{font-size:15px;}
-.lt-smallest-text{font-size:12px;}
+.lt-text{font-size:36px;}
+.lt-small-text{font-size:24px;}
+.lt-smaller-text{font-size:18px;}
+.lt-smallest-text{font-size:15px;}
 /* Position Styles */
 .lt-top{margin:0;left:0;right:0;top:0;}
 .lt-bottom{margin:0;left:0;right:0;bottom:0;}
