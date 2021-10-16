@@ -24,11 +24,11 @@
                   #body, #header-title {color:rgb(40, 42, 49);}
 
                   #site-theme {
-                      display:block;
-                      position: absolute;
-                      top:0px;
-                      right:0px;
-                      margin:10px;
+                      position: relative;
+                      background-color: inherit;
+                      width:30%;
+                      margin:auto;
+                
                   }
 
                   
@@ -114,7 +114,12 @@
                 .lt-text {font-size:24px;}
                 .lt-small-text{font-size:20px;}}
             
-            
+                #site-theme {
+                        width:auto;
+                        background-color:rgb(40, 42, 49);
+                        text-align: center;
+                        
+                    }
             
                 .dot {
                     cursor: pointer;
@@ -148,31 +153,15 @@
                 from {opacity: .4} 
                 to {opacity: 1}
                 }
-
-                @keyframes backgroundColorPalette {
-                0% {
-                background: #ee6055;
-                }
-                25% {
-                background: #99d67b;
-                }
-                50% {
-                background: #b7da45;
-                }
-                75% {
-                background: #ffd97d;
-                }
-                100% {
-                background: #ff9b85;
-                }
-                }
+            
 
                 </style>
         
             </head>
          <!-- Main Content -->
+         <div id="content">
          <div id="site-theme"><button id="Color"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/index.html">Color</a></button><button id="Light"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/light.html">Light</a></button><button id="Dark"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/dark.html">Dark</a></button></div>
-            <div id="body">
+           </div> <div id="body">
             <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10">
             <div id="header-title" class="lt-h4"><a href="#Mission">Fallbrook LemonTech</a></div>
             <div id="tag-line" class="lt-small-text"><a href="#Mission"> Design </a>|<a href="#Services"> Develop </a>|<a href="#Cost"> Maintain </a>|<a href="#Contact"> Consult </a><span id="os" class="lt-padding-right-5"></span> Windows <span style="color:black;">|</span> MacOS <span style="color:black;">|</span> Linux</div>
