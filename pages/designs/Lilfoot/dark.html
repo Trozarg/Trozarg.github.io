@@ -45,9 +45,6 @@
                     
                   }
 
-                  #Color a:hover {
-
-                  }
 
                  #Light  {
                     color:white;
@@ -60,9 +57,6 @@
                     color:white;
                   }
 
-                 #Light a:hover {
-
-                  }
 
                  #Dark {
                     color:white;
@@ -74,15 +68,6 @@
                   #Dark a {
                     color:white;
                   }
-
-                  #Dark a:link{
-
-                  }
-
-                  #Dark a:hover {
-
-                  }
-                  
 
             #footer a {color:rgb(255, 255, 255);}
             
@@ -98,14 +83,22 @@
             .mySlides {display:none;}
                 
                 
-            .slideshow-container {
+			.slideshow-container {
                     max-width: 1000px;
-                    position: inline-block;
-                    margin-left:21%;
+                    display: inline-block;
+					position: relative;
+                    margin-left:21.5%;
                     margin-right:20%;
                     margin-top:20%;
-                    margin-bottom:10%;
+                    
                 }
+				
+				#dot {
+					margin-left: 15%;
+					margin-right: 20%;
+					margin-top: 5%;
+					margin-bottom: 20%;
+				}
 
                 @media only screen and (min-width: 320px) and (max-width: 797px)
                 {.slideshow-container{max-width:767px;
@@ -121,6 +114,13 @@
                         background-color: aliceblue;
                         text-align: center;
                     }
+					
+					#dot {
+					margin-left: 20%;
+					margin-right: 20%;
+					margin-top: 5%;
+					margin-bottom: 20%;
+				}
             
                 .dot {
                     cursor: pointer;
@@ -186,14 +186,14 @@
                 <div class="lt-text">
                 Hi my name is James Lemon, I am a 31 year old cyborg.
                 Let me develop tech that will work, for you.</div>
-            </div></div>
+            </div>
         
             
     
-            <div style="text-align: center;">
+            <div id="dot" style="text-align: center;">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span></div>
+            <span class="dot" onclick="currentSlide(3)"></span></div></div>
 
             
     
@@ -245,13 +245,13 @@
            
         
             <!-- End of Main Content -->
-            <div id="footer">
+            <div id="footer" style="margin-left: 10px;">
               <a href="https://www.facebook.com/james.lemon.12914">Facebook </a><a href="https://www.twitter.com/_jameslemon">Twitter </a><a href="https://www.instagram.com/_jameslemon">Instagram </a>
-            </div>
+            
             
             <div alt="copyright 2021 fallbrook lemontech all 
             rights reserved">© 2021 Fallbrook LemonTech | All rights reserved</div>
-            </div>
+            </div></div>
             <script>
             var slideIndex = 1;
             showSlides(slideIndex);
