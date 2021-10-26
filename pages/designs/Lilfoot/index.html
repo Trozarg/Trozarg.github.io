@@ -82,6 +82,7 @@ padding-bottom: 50px;
                     background-color: black;
                     margin:10px;
 					font-family: inherit;
+					font-size: 20px;
                   }
 
                   #Color a {
@@ -95,6 +96,7 @@ padding-bottom: 50px;
                     border:white 2px round;
                     margin:10px;
 					font-family: inherit;
+					font-size: 20px;
                   }
 
                  #Light a {
@@ -108,6 +110,7 @@ padding-bottom: 50px;
                     border:white 2px round;
                     margin:10px;
 					font-family:inherit;
+					font-size: 20px;
                   }
 
                   #Dark a {
@@ -146,13 +149,64 @@ padding-bottom: 50px;
 					margin-bottom: 20%;
 				 }
 				 
+				 button {
+					 background-color: black;
+					 color: white;
+					 border: .01px solid silver;
+				 }
+				 
+				 a {
+					 color: white;
+				 }
+				 
 				 .socialButton {
 					 display: inline-block;
 					 margin-left: 5px;
 					 padding: 5px; 
-					 font-size: 22px;
+					 font-size: 20px;
 					 font-family: Inherit;
 				 }
+				 
+				 
+				 
+				 #callText { 
+					 font-size: 38px;
+					 font-family: Inherit;
+					 font-weight: bold;
+				 }
+				 
+				 #callButton {
+					display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 5px;
+					 padding-bottom: 5px;
+					margin: 5px;
+				 }
+				 
+				 #myBtn {
+					 font-family: inherit;
+					 font-size: 38px;
+					 font-weight: bold;
+					 margin-top: 5px;
+					 padding-left: 10px;
+					 padding-right: 10px;
+					 padding-top: 5px;
+					 padding-bottom: 5px;
+				 }
+				 
+				 #connect {
+					 font-family: inherit;
+					 font-size: 38px;
+					 font-weight: bold;
+					 margin-top: 5px;
+					 padding-left: 10px;
+					 padding-right: 10px;
+					 padding-top: 5px;
+					 padding-bottom: 5px;
+				 }
+				 
+				 
 				
 
                 @media only screen and (min-width: 320px) and (max-width: 797px)
@@ -237,7 +291,7 @@ padding-bottom: 50px;
          <div id="body" style="background-image:url('/pages/designs/Lilfoot/clouds.png');">
             <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10">
             <div id="header-title" class="lt-h4"><a href="#Mission" style="color:black;">Fallbrook LemonTech</a></div>
-            <div id="tag-line" class="lt-small-text" style="color:black;"><a href="#Mission"> Design </a>|<a href="#Services"> Develop </a>|<a href="#Cost"> Maintain </a>|<a href="#Contact"> Consult </a><span>|</span><span id="os" class="lt-padding-left-5" style="color:white;"> Windows <span style="color:black;">|</span> MacOS <span style="color:black;">|</span> Linux</span></div>
+            <div id="tag-line" class="lt-small-text" ><a style="color:black;" href="#Mission"> Design </a>|<a style="color:black;" href="#Services"> Develop </a>|<a style="color:black;" href="#Cost"> Maintain </a>|<a style="color:black;" href="#Contact"> Consult </a><span>|</span><span id="os" class="lt-padding-left-5" style="color:white;"> Windows <span style="color:black;">|</span> MacOS <span style="color:black;">|</span> Linux</span></div>
             </div>
             
             <!-- Header Ends -->
@@ -298,19 +352,19 @@ padding-bottom: 50px;
                 <div class="lt-h5" style="color:black; padding-bottom:20px; font-size:48px">Pricing</div>
                 <div class="lt-small-text" style="color:white;">$25 an hour.</div>
                 <div class="lt-h5">Consultation Included</div>
-                    <div class="lt-small-text" style="color:rgb(31, 33, 39);">
+                    <div class="lt-small-text" style="color:black;">
                         <ul>
                             <li>System Check</li>
                             <li>Good for multiple services.</li>
                             <li>Customer Call-back</li>
                         </ul>
                     </div>
-                 <div class="lt-h5"><button id="callButton" type="button" name="button" style="font-family:inherit;"><a href="tel:760.450.3194" alt="call phone number 760 450 3194" style="color:black;">Call Now</a></button></div></div>
+                 <div class="lt-h5"><div id="call"><button id="callButton" type="button" name="button" style="font-family:inherit;"><a id="callText" href="tel:760.450.3194" alt="call phone number 760 450 3194">Call Now</a></button></div></div></div>
                 
         
 
             <div id="Contact" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-20 lt-container">
-            <div class="lt-h5" style="color:black;">Contact</div>
+            <div class="lt-h5" style="color:black; font-size:48px">Contact</div>
                 <div class="lt-text"></div>
                 <div class="lt-h5"><button  id="myBtn" type="button" name="button" style="font-family:inherit;">Location</button></div>
 					<!-- The Modal -->
@@ -321,14 +375,14 @@ padding-bottom: 50px;
 						<span class="close">&times;</span>
 						<div class="mapouter"><div class="gmap_canvas"><iframe width="720" height="341" id="gmap_canvas" src="https://maps.google.com/maps?q=5090%20Avocado%20Park%20Lane&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:right;height:341px;width:720px;}</style><a href="https://www.embedgooglemap.net">insert google map into website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:341px;width:720px;}</style></div></div>
 					  </div></div>
-                <div class="lt-h5"><button  type="button" name="button" style="font-family:inherit;"><a href="#m2">Connect</a></button></div>
+                <div class="lt-h5"><button id="connect" type="button" name="button" style="font-family:inherit;"><a href="">Connect</a></button></div>
 					</div>
 				
            
         
             <!-- End of Main Content -->
             <div id="footer" style="margin-left:10px;">
-              <button class="socialButton" type="button" name="button" ><a href="https://www.facebook.com/james.lemon.12914" style="color:black;">Facebook </a></button><button class="socialButton" type="button" name="button"><a href="https://www.twitter.com/_jameslemon" style="color:black;">Twitter </a></button><button class="socialButton" type="button" name="button" ><a href="https://www.instagram.com/_jameslemon" style="color:black;">Instagram </a></button>
+              <button class="socialButton" type="button" name="button" ><a href="https://www.facebook.com/james.lemon.12914">Facebook </a></button><button class="socialButton" type="button" name="button"><a href="https://www.twitter.com/_jameslemon" >Twitter </a></button><button class="socialButton" type="button" name="button" ><a href="https://www.instagram.com/_jameslemon" >Instagram </a></button>
             
             
             <div alt="copyright 2021 fallbrook lemontech all 
