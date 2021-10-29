@@ -1,174 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Fallbrook LemonTech</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
-</head>
-<style>
-body, html, #modal01 {
-  height: 100%;
-  margin: 0px;
-  background-color: #263945;
+    <html lang="en">
 
-}
+        <head>
+               
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/lt.css"> 
+            <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/css/lt.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+            <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+        <title>Fallbrook LemonTech</title>
 
-#callNow a:link {
-text-decoration:none;
-}
+        </head>
+
+        <style>
+			     
+ #body    {
+                 animation-name: backgroundColorPalette;
+                 animation-duration: 30s;
+                 animation-iteration-count: infinite;
+                 animation-direction: alternate;
+               }
+			
+ #body {color: rgb(255, 255, 255);
+                 font-weight: bold;}
+			   
+ #body, #header-title {color: white;}
+
+ #site-theme {
+                 width: auto;
+                 text-align: center;
+               }
+				  
+			/* The Modal (background) */
+ .map {
+	 		     display: none; /* Hidden by default */
+	  		     position: fixed; /* Stay in place */ /* Sit on top */
+	  		     padding: 5px;
+	  		     left: 0;
+	  			 top: 0;
+	  			 background-color: white;
+	  			 width: 17%; /* Full width */
+	  			 height: 40%; /* Full height */
+	  			 margin: 0;
+	 		   }
+		
+ .map-content {
+				 display: block;
+				 position: fixed;
+				 padding-bottom: 0px;
+				 left:0;
+				 right:0;
+			   }
+	
+			/* The Close Button */
+ .close {
+	  			 color: #aaaaaa;
+	  			 float: right;
+	  			 font-size: 28px;
+	  			 font-weight: bold;
+			   }
+
+ .close:hover,
+ .close:focus {
+	  			 color: #000;
+	  			 text-decoration: none;
+	  			 cursor: pointer;
+			   }
+	
+			 /* Dropdown Button */
+  .dropbtn {
+  				 background-color: white;
+  				 color: black;
+  				 padding: 16px;
+  				 font-size: 16px;
+  				 border: none;
+  				 cursor: pointer;
+			   }
+
+			 /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+  				 background-color: white;
+			   }
+
+			 /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+  				 position: relative;
+  				 display: inline-block;
+			   }
+
+			 /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+  				 display: none;
+  				 position: absolute;
+  				 background-color: #f1f1f1;
+  				 min-width: 160px;
+  				 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  				 z-index: 1;
+			   }
+
+			/* Links inside the dropdown */
+			   .dropdown-content a {
+  				 color: black;
+  				 padding: 12px 16px;
+  				 text-decoration: none;
+  				 display: block;
+			   }
+
+			 /* Change color of dropdown links on hover */
+			   .dropdown-content a:hover {background-color: #ddd}
+
+			 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+			   .show {display:block;}
+  #Color  {
+                 color:white;
+                 background-color: black;
+                 margin:10px;
+			 	 font-family: inherit;
+				 font-size: 20px;
+               }
+
+  #Color a {
+                 color: white;
+               }
 
 
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif;}
+  #Light  {
+                 color:white;
+                 background-color: black;
+                 border:white 2px round;
+                 margin:10px;
+				 font-family: inherit;
+			     font-size: 20px;
+                }
+
+   #Light a {
+                  color:white;
+                }
 
 
+   #Dark {
+                  color:white;
+                  background-color:black;
+                  border:white 2px round;
+                  margin:10px;
+			      font-family:inherit;
+				  font-size: 20px;
+                }
 
-#social a:link {text-decoration:none; list-style-type: none;}
-
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-<body>
-  <div>
-
-<!-- Sidebar/menu -->
-
-<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding-68" style="z-index:3;width:300px;font-weight:bold;background-color:#111922;color:white;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <img href="images/icons/fltlogo.png" src="images/icons/fltlogo.png" alt="fallbrook lemontech site logo medium" style="margin-left: 10px;padding-top: 30px"></img>
-  <div class="w3-container">
-    <h2 class="w3-padding-40"><b>Fallbrook<br>LemonTech</b></h2>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button " alt="home location top nav bar">Home</a>
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button " alt="showcase location top nav bar">Showcase</a>
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button " alt="services location top nav bar">Services</a>
-    <a href="#lemontech" onclick="w3_close()" class="w3-bar-item w3-button " alt="LemonTech location top nav bar">LemonTech</a>
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button "alt="packages location top nav bar">Packages</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button " alt="contact location top nav bar">Contact</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-15" style="background-color:#111922; color:white;">
-  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Fallbrook LemonTech</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:78px;margin-bottom:20px;padding-bottom: 0px; color:white;" id="showcase">
-    <h1 class="w3-jumbo"><img href="images/icons/fltbanner.png" src="images/icons/fltbanner.png" alt="fallbrook lemontech site bannner medium"><span style="margin-top: 50px"> <b>Computer Repair</b></h1></span></img>
-
-
-<!-- Services -->
-<div class="w3-container" id="services" style="margin-top:40px;color:white;">
-    <h1 class="w3-xxxlarge"><b>Services.</b></h1>
+   #Dark a {
+                  color:white;
+                }
+				
+   #footer {color:black;}
+                  
+   #footer a {color:white;}
+            
+   .grid-container {
+                   display: inline-grid;
+                   grid-template-columns: auto auto auto;}
     
-    <br>
-    <h3>Free Consultation Included</h3>
-    <h3>Computer</h3>
-    <ul><h3>
-    <li>Virus Removal</li>
-    <li>File/Data Recovery</li>
-    <li>Windows/Linux Install</li>
-    <li>Hardware Installation</li>
-    </h3>
-    </ul>
-
-    <h3>Web Development</h3>
-    <ul>
-    <h3>
-    <li>Site Design</li>
-    <li>Site Hosting/launch</li>
-    <li>Setup Business Online <br>i.e. Google My Business/Social Media</li>
-    <li>DIY Tutorials/Phone</li>
-    </h3>
-    </ul>
-</div>
-
-  <!-- LemonTech -->
-  <div class="w3-container" id="lemontech" style="margin-top:40px;color:white;">
-    <h1 class="w3-xxxlarge"><b>LemonTech.</b></h1>
+   .grid-container > div {
+                   text-align: center;
+                   font-size: 30px;
+                }
+                
+   .mySlides {display:none;}
+                
+   .slideshow-container {
+                   max-width: 1000px;
+                   display: inline-block;
+				   position: relative;
+                   margin-left:21.5%;
+                   margin-right:20%;
+                   margin-top:20%;
+                }
+				
+	#dot {
+				   margin-left: 15%;
+				   margin-right: 20%;
+				   margin-top: 5%;
+				   margin-bottom: 20%;
+				}
+				 
+	 button {
+				   background-color: black;
+				   color: white;
+				   border: .01px solid silver;
+				}
+				 
+	 a {
+				   color: white;
+				}
+				 
+	 .socialButton {
+				   display: inline-block;
+				   margin-left: 5px;
+				   padding: 5px; 
+				   font-size: 20px;
+				   font-family: Inherit;
+			    }
+				 
+	  #callText { 
+				   font-size: 38px;
+				   font-family: Inherit;
+				   font-weight: bold;
+				}
+				 
+	  #callButton {
+				   display: block;
+				   padding-left: 10px;
+				   padding-right: 10px;
+				   padding-top: 5px;
+				   padding-bottom: 5px;
+				   margin: 10px;
+				   margin-left: 0;
+				}
+				 
+	  #myBtn {
+				   font-family: inherit;
+				   font-size: 38px;
+				   font-weight: bold;
+				   margin-top: 5px;
+				   padding-left: 10px;
+				   padding-right: 10px;
+				   padding-top: 5px;
+				   padding-bottom: 5px;
+				}
+				 
+	  #connect {
+				   font-family: inherit;
+				   font-size: 38px;
+				   font-weight: bold;
+				   margin-top: 5px;
+				   padding-left: 10px;
+				   padding-right: 10px;
+				   padding-top: 5px;
+				   padding-bottom: 5px;
+				}
+				 
+			@media only screen and (min-width: 320px) and (max-width: 797px)
+                {.slideshow-container{max-width:767px;
+                    margin-left:20%;
+                    margin-right:20%;
+                    margin-top:20%;
+                    margin-bottom:10%;}
+                .lt-text {font-size:24px;}
+                .lt-small-text{font-size:20px;}
+			
+			 .map {
+	  			   display: none; /* Hidden by default */
+	  		       position: fixed; /* Stay in place */ /* Sit on top */
+	  			   padding: 5px;
+	  			   left: 0;
+	  			   top: 0;
+	  			   background-color: white;
+	  			   width: 80%; /* Full width */
+	  			   height: 50%; /* Full height */
+	  			   margin: 0;
+	  			   }
+			 .dropbtn {
+  				   background-color: white;
+  				   color: black;
+  				   padding: 10px;
+  				   font-size: 16px;
+  				   border: none;
+  				   cursor: pointer;
+				   }
+			    }
+            
+              #site-theme {
+                   width:auto;
+                   text-align: center;
+                   }
+				
+			  #dot {
+				   margin-left: 20%;
+				   margin-right: 20%;
+				   margin-top: 5%;
+				   margin-bottom: 20%;
+				 }
+            
+              .dot {
+                   cursor: pointer;
+                   height: 15px;
+                   width: 15px;
+                   margin: 0 2px;
+                   background-color: rgb(255, 255, 255);
+                   border-radius: 50%;
+                   display: inline-block;
+                   transition: background-color 0.6s ease;
+                 }
     
-  </div>
+               .active, .dot:hover {
+                   background-color: #717171;
+                 }
+				
+		     /* Fading animation */
+                .fade {
+                 -webkit-animation-name: fade;
+                 -webkit-animation-duration: 1.5s;
+                 animation-name: fade;
+                 animation-duration: 1.5s;
+                 }
+    
+                @-webkit-keyframes fade {
+                 from {opacity: .4} 
+                 to {opacity: 1}
+                 }
+    
+                @keyframes fade {
+                 from {opacity: .4} 
+                 to {opacity: 1}
+                 }
 
-  <!-- The Team -->
-  <div class="w3-row-padding">
-    <div class="w3-col m4 w3-margin-bottom">
-	    <div class="w3-light-grey">
-		    <div class="w3-container" style="padding:10px;">
-		<img href="images/site-images/myself.png" src="images/site-images/myself.png" alt="image of fallbrook lemontech owner and operator he's handsome lad lol" style="width:100%">
-		<h3>James Lemon</h3>
-          <p class="w3-opacity">Owner & Founder</p>
-        </div>
-      </div>
-    </div>
-  </div>
+                @keyframes backgroundColorPalette {
+                 0% {
+                 background: #ee6055;
+                 }
+                 25% {
+                 background: #99d67b;
+                 }
+                 50% {
+                 background: #b7da45;
+                 }
+                 75% {
+                 background: #ffd97d;
+                 }
+                 100% {
+                 background: #ff9b85;
+                 }
+                }
+			
+		</style>
+        
+        </head>
+        <!-- Main Content -->
+         <div id="content">
+         <div id="site-theme"><button id="Color"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/index.html">Color</a></button><button id="Light"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/light.html">Light</a></button><button id="Dark"><a href="https://www.fallbrooklemontech.com/pages/designs/Lilfoot/dark.html">Dark</a></button></div>
+         </div>
+            <div id="body" style="background-image:url('/pages/designs/Lilfoot/clouds.png');">
+            <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10">
+            <div id="header-title" class="lt-h4"><a href="#Home" style="color:black;">Fallbrook LemonTech</a><!-- <br><div id="tag-line" class="lt-small-text" ><a style="color:black;" href="#Mission"> Design </a><span style="color:white;">|</span><a style="color:black;" href="#Services"> Develop </a><span style="color:white;">|</span><a style="color:black;" href="#Cost"> Maintain </a><span style="color:white;">|</span><a style="color:black;" href="#Contact"> Consult </a><span><span style="color:white;">|</span></span>--></div>
+            <div id="tag-line" class="lt-small-text" ><a style="color:black;" href="#About"> About </a><span style="color:white;">|</span><a style="color:black;" href="#Services"> Services </a><span style="color:white;">|</span><a style="color:black;" href="#Cost"> Cost </a><span style="color:white;">|</span><a style="color:black;" href="#Contact"> Contact </a><span style="color:white;">|</span><span id="os" class="lt-padding-left-5" style="color:white;"> Windows <span style="color:black;">|</span> MacOS <span style="color:black;">|</span> Linux</span></div>
+         </div>
+			
+            
+         <!-- Header Ends -->
+        
+         <!-- Content Begins -->
+            
+         <div class="slideshow-container grid-container" id="#About">
+             <div class="mySlides fade"><div class="lt-h4" style="color:black;">Mission</div><div class="lt-text">
+              To help make tech do what you want. 
+              Design your vision, develop your site
+              and broadcast your organization.</div></div>
+             <div class="mySlides fade"><div class="lt-h4" style="color:black;">Objective</div>
+             <div class="lt-text">
+                To design, develop, and maintain sites,
+                applications, programs and infastructure. 
+                For personal or organizations use. </div></div>
+             <div class="mySlides fade"><div class="lt-h4" style="color:black;">LemonTech</div>
+             <div class="lt-text">
+                Hi my name is James Lemon, I am a 31 year old cyborg.
+                Let me develop tech that will work, for you.</div>
+         </div>
+        
+            
+    
+         <div id="dot" style="text-align: center;">
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+		     </div>
+		 </div>
 
-  <!-- Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:40px; color:white;">
-    <h1 class="w3-xxxlarge"><b>Package</b></h1>
+            
+    
+         <div id="Services" class="lt-margin-none lt-padding-top-20 lt-padding-left-20 lt-padding-right-20 lt-padding-bottom-10 lt-container">
+               <div class="lt-h5" style="color:black; text-align:center; padding-bottom:20px; font-size:48px; ">Services</div>
+               <div class="lt-text"></div>
+               <div class="lt-h5" style="color:white;">Web</div>
+               <div class="lt-small-text" style="color:black;">
+			   <ul>
+               <li>Site Design</li>
+               <li>Site Development</li>
+               <li>Online Social Media Presence<br>
+                   i.e. Google My Business | Facebook | Instagram | Twitter </li>
+               <li>Remote Walkthroughs</li>
+			   </ul>
+			   </div>
+            
+               
+         <div class="lt-h5" style="color:white;">Desktop | Laptop | Macbook</div>
+              <div class="lt-small-text" style="color:black;">
+                <ul>
+                <li>Virus Removal</li>
+                <li>Data Recovery</li>
+                <li>Windows/Linux Install</li>
+                <li>Hardware Installation</li>
+                </ul>
+              </div>
+         </div>
+            
 
-  </div>
+         <div id="Cost" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10 lt-container">
+              <div class="lt-h5" style="color:black; padding-bottom:20px; font-size:48px">Pricing</div>
+                <div class="lt-small-text" style="color:white;">$25 an hour.</div>
+                <div class="lt-h5">Consultation Included</div>
+              <div class="lt-small-text" style="color:black;">
+                <ul>
+                  <li>System Check</li>
+                  <li>Good for multiple services.</li>
+                  <li>Customer Call-back</li>
+				  <div class="lt-h5"><div id="call"><button id="callButton" type="button" name="button" style="font-family:inherit;"><a id="callText" href="tel:760.450.3194" alt="call phone number 760 450 3194">Call Now</a></button></div></div></div>
+                </ul>
+         </div>
+                 
+         <div id="Contact" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-20 lt-container">
+                <div class="lt-h5" style="color:black; font-size:48px">Contact</div>
+                <div class="lt-text"></div>
+                <div class="lt-h5"><button id="myBtn" type="button" name="button" style="font-family:inherit;">Location</button></div>
+				<div id="map" class="map">
+				  <span class="close">&times;</span>
+				<iframe class="map-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.6370025168994!2d-117.15180825031292!3d33.32830426288638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db87bdf3698401%3A0x8a02c7dc960dde9c!2s5090%20Avocado%20Park%20Ln%2C%20Fallbrook%2C%20CA%2092028!5e0!3m2!1sen!2sus!4v1635355765654!5m2!1sen!2sus" width="297" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="dropdown"><button onclick="myFunction()" class="dropbtn lt-h5 " id="connect" style="font-family:inherit;">Connect</button>
+				<div id="myDropdown"class="dropdown-content">
+				  <a href="mailto:lemonj103@gmail.com"><span style="font-size:18px;">Email </span> lemonj103@gmail.com</a>
+				<div style="color:black;font-size:18px;padding-left:16px;padding-bottom: 5px;">
+					Mailing Address<br>
+					James Lemon <br>
+					5090 Avocado Park Lane<br>
+					Fallbrook CA, 92028</div></div>
+		 </div></div>
+				
+         <!-- End of Main Content -->
+         <div id="footer" style="margin-left:10px;">
+              	  <button class="socialButton" type="button" name="button" ><a href="https://www.facebook.com/james.lemon.12914">Facebook </a></button><button class="socialButton" type="button" name="button"><a href="https://www.twitter.com/_jameslemon" >Twitter </a></button><button class="socialButton" type="button" name="button" ><a href="https://www.instagram.com/_jameslemon" >Instagram </a></button>
+            
+		 <div alt="copyright 2021 fallbrook lemontech all 
+             rights reserved">© 2021 Fallbrook LemonTech | All rights reserved</div>
+         </div></div>
+            
+		 <script>
+             var slideIndex = 1;
+             showSlides(slideIndex);
+            
+             function currentSlide(n) {
+              showSlides(slideIndex = n);
+             }
+            
+             function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+             }
+              for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+             }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+             }
+			 
+			 // Get the modal
+             var iframe = document.getElementById("map");
 
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-xlarge w3-padding-32" style="background-color:#111922;color:white;">Hourly <br>(Free Consultation)</li>
-        <li class="w3-padding-16">System Check</li>
-        <li class="w3-padding-16">Good for multiple service repairs.</li>
-        <li class="w3-padding-16">2 week customer Call-back.</li>
-        <li class="w3-padding-16">Tech Advice/Consultation</li>
-        <li class="w3-padding-16">%10 OFF Next Service.</li>
-        <li class="w3-padding-16">
-          <h2>$ 25</h2>
-          <span class="w3-opacity">per hour</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button id="callNow" class="w3-button w3-padding-large " style="background-color:#111922;color:white;"><a href="tel:760.450.3194" alt="call 760 450 3194 now button">Call Now</a></button>
-        </li>
-      </ul>
-    </div>
+			 // Get the button that opens the modal
+		     var btn = document.getElementById("myBtn");
 
+			 // Get the <span> element that closes the modal
+			 var span = document.getElementsByClassName("close")[0];
 
-<!-- End of Content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-container w3-padding-32" id="contact" style="margin-top:25px;margin-left:15px;margin-right:0;padding-left: 25px; padding-right:58px;background-color:#111922;color:rgb(255, 255, 255);">
-  <h1 class="w3-xxxlarge"><b>Contact.</b></h1>
-  <h2><a href="tel:760.450.3194" alt="call phone number 760 450 3194">Call</a></img><span>, </span><a href="mailto:lemonj103@gmail.com"> Email</a></img><span> or Connect</h2>
-    <div id="social"><a href="https://www.facebook.com/james.lemon.12914"><img src="https://cdn.techgyd.com/50-Best-Facebook-Logo-Icons-GIF-Transparent-PNG-Images-54.png" style="width: 20px; height:20px">Facebook</a></img><span> </span><a href="https://www.twitter.com/_jameslemon"><img src="https://blog-assets.hootsuite.com/wp-content/uploads/2018/09/Twitter_Logo_WhiteOnImage-150x150.png" style="width:20px; height:20px"> Twitter</a></img><span> </span><a href="https://www.instagram.com/_jameslemon"><img src="https://www.renaissancegolf.com/content/library/instagram-glyph-icon-white.png" style="width:20px; height:20px"> Instagram</a></img></div>
-  <p id="copyright" alt="copyright 2021 fallbrook lemontech all rights reserved"> © 2021 Fallbrook LemonTech | All rights reserved<span class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS & LEMONS</a></p></span>
-</div>
-</body>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-</html>
+			 // When the user clicks the button, open the modal 
+			 btn.onclick = function() {
+  			 iframe.style.display = "block";
+		     }
+			
+			// When the user clicks on <span> (x), close the modal
+		    span.onclick = function() {
+  			iframe.style.display = "none";
+			}
+			
+			// When the user clicks anywhere outside of the modal, close it
+		    window.onclick = function(event) {
+            if (event.target == iframe) {
+            iframe.style.display = "none";
+            }
+		   }
+		   
+		</script>
+	
+		<script>
+	     	
+			/* When the user clicks on the button, 
+		 	toggle between hiding and showing the dropdown content */
+         	function myFunction() {
+         	document.getElementById("myDropdown").classList.toggle("show");
+	  	 	}
+		 
+			 // Close the dropdown if the user clicks outside of it
+		 	window.onclick = function(event) {
+         	if (!event.target.matches('.dropbtn')) {
+         	var dropdowns = document.getElementsByClassName("dropdown-content");
+         	var i;
+         	for (i = 0; i < dropdowns.length; i++) {
+         	var openDropdown = dropdowns[i];
+         	if (openDropdown.classList.contains('show')) {
+         	openDropdown.classList.remove('show');
+        	}
+       	   }
+          }
+         }
+	
+	</script>   
+			
+<!-- End of Site -->
+</html> 
