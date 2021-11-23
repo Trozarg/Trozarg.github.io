@@ -1,18 +1,18 @@
-#body 
-{animation-name: backgroundColorPalette;
-animation-duration: 30s;
-animation-iteration-count: infinite;
-animation-direction: alternate;}
-        
-#body {color:rgb(255, 255, 255);font-weight: bold;}
-           
-#body, #header-title {color:white;}
+  #body 
+  {animation-name: backgroundColorPalette;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;}
 
-#site-theme {width:auto;text-align:center;}
+  #body {color:rgb(255, 255, 255);font-weight: bold;}
+           
+  #body, #header-title {color:white;}
+
+  #site-theme {width:auto;text-align:center;}
               
   /* The Modal (background) */
-.map 
-{display:none; /* Hidden by default */
+  .map 
+  {display:none; /* Hidden by default */
   position:fixed; /* Stay in place */ /* Sit on top */
   padding: 5px;
   left: 0;
@@ -23,200 +23,200 @@ animation-direction: alternate;}
   margin: 0;}
     
 .map-content 
-{display: block;
-position: fixed;
-padding-bottom: 0px;
-left:0;
-right:0;}
+  {display: block;
+  position: fixed;
+  padding-bottom: 0px;
+  left:0;
+  right:0;}
 
-/* The Close Button */
-.close 
-{color: #aaaaaa;
+  /* The Close Button */
+  .close 
+  {color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;}
 
-.close:hover,.close:focus {color: #000;text-decoration: none;cursor: pointer;}
+  .close:hover,.close:focus {color: #000;text-decoration: none;cursor: pointer;}
 
   /* Dropdown Button */
-.dropbtn 
-{background-color: white;
-color: black;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;}
+  .dropbtn 
+  {background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;}
 
   /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {background-color: white;}
+  .dropbtn:hover, .dropbtn:focus {background-color: white;}
 
   /* The container <div> - needed to position the dropdown content */
-.dropdown {position: relative;display: inline-block;}
+  .dropdown {position: relative;display: inline-block;}
 
   /* Dropdown Content (Hidden by Default) */
-.dropdown-content 
-{display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;}
+  .dropdown-content 
+  {display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
 
   /* Links inside the dropdown */
-.dropdown-content a 
-{color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;}
+  .dropdown-content a 
+  {color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
 
   /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {background-color: #ddd}
 
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+  .show {display:block;}
 
-#Color  
-{color:white;
-background-color: black;
-margin:10px;
+  #Color  
+  {color:white;
+  background-color: black;
+  margin:10px;
   font-family: inherit;
   font-size: 20px;}
 
-#Color a {color: white;}
+  #Color a {color: white;}
 
 
-#Light  
-{color:white;
-background-color: black;
-border:white 2px round;
-margin:10px;
+  #Light  
+  {color:white;
+  background-color: black;
+  border:white 2px round;
+  margin:10px;
   font-family: inherit;
   font-size: 20px;}
 
-#Light a {color:white;}
+  #Light a {color:white;}
 
 
-#Dark {color:white;
-background-color:black;
-border:white 2px round;
-margin:10px;
+  #Dark {color:white;
+  background-color:black;
+  border:white 2px round;
+  margin:10px;
   font-family:inherit;
   font-size: 20px;}
 
-#Dark a {color:white;}
+  #Dark a {color:white;}
             
-#footer {color:black;}
+  #footer {color:black;}
               
-#footer a {color:white;}
+  #footer a {color:white;}
         
-.grid-container {display: inline-grid;grid-template-columns: auto auto auto;}
+  .grid-container {display: inline-grid;grid-template-columns: auto auto auto;}
 
-.grid-container > div {text-align: center;font-size: 30px;}
+  .grid-container > div {text-align: center;font-size: 30px;}
             
-.mySlides {display:none;}
+  .mySlides {display:none;}
             
-.slideshow-container 
-{max-width: 1000px;
-display: inline-block;
-position: relative;
-margin-left:21.5%;
-margin-right:20%;
-margin-top:20%;}
+  .slideshow-container 
+  {max-width: 1000px;
+  display: inline-block;
+  position: relative;
+  margin-left:21.5%;
+  margin-right:20%;
+  margin-top:20%;}
             
   #dot 
-{margin-left: 15%;
+  {margin-left: 15%;
   margin-right: 20%;
   margin-top: 5%;
   margin-bottom: 20%;}
              
   button 
-{background-color: black;
+  {background-color: black;
   color: white;
   border: .01px solid silver;}
              
   a {color: white;}
              
   .socialButton 
-{display: inline-block;
+  {display: inline-block;
   margin-left: 5px;
   padding: 5px; 
   font-size: 20px;
   font-family: Inherit;}
              
   #callText 
-{font-size: 38px;
+  {font-size: 38px;
   font-family: Inherit;
   font-weight: bold;}
              
   #callButton 
-{display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 10px;
-    margin-left: 0;}
+  {display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;    
+  padding-bottom: 5px;
+  margin: 10px;
+  margin-left: 0;}
              
   #myBtn 
-{font-family: inherit;
-    font-size: 38px;
-    font-weight: bold;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;}
+  {font-family: inherit;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;}
              
   #connect 
-{font-family: inherit;
-    font-size: 38px;
-    font-weight: bold;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;}
+  {font-family: inherit;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;}
              
-    @media only screen and (min-width: 320px) and (max-width: 797px)
-{.slideshow-container{max-width:767px;
-margin-left:20%;
-margin-right:20%;
-margin-top:20%;
-margin-bottom:10%;}
-.lt-text {font-size:24px;}
-.lt-small-text{font-size:20px;}
+  @media only screen and (min-width: 320px) and (max-width: 797px)
+  {.slideshow-container{max-width:767px;
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:20%;
+  margin-bottom:10%;}
+ .lt-text {font-size:24px;}
+ .lt-small-text{font-size:20px;}
         
  .map 
-  {display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */ /* Sit on top */
-  padding: 5px;
-  left: 0;
-  top: 0;
-  background-color: white;
-  width: 80%; /* Full width */
-  height: 50%; /* Full height */
-  margin: 0;}
+ {display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */ /* Sit on top */
+ padding: 5px;
+ left: 0;
+ top: 0;
+ background-color: white;
+ width: 80%; /* Full width */
+ height: 50%; /* Full height */
+ margin: 0;}
 
- .dropbtn 
-{background-color: white;
-  color: black;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;}}
+.dropbtn 
+ {background-color: white;
+ color: black;
+ padding: 10px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;}}
 
-#site-theme 
-{width:auto;
-text-align: center;}
+ #site-theme 
+ {width:auto;
+ text-align: center;}
             
  #dot 
-{margin-left: 20%;
-     margin-right: 20%;
-     margin-top: 5%;
-     margin-bottom: 20%;}
+ {margin-left: 20%;
+ margin-right: 20%;
+ margin-top: 5%;
+ margin-bottom: 20%;}
         
-.dot 
-{cursor: pointer;
+ .dot 
+ {cursor: pointer;
  height: 15px;
  width: 15px;
  margin: 0 2px;
@@ -225,38 +225,38 @@ text-align: center;}
  display: inline-block;
  transition: background-color 0.6s ease;}
 
-.active, .dot:hover 
-{background-color: #717171;}
+ .active, .dot:hover 
+ {background-color: #717171;}
             
  /* Fading animation */
-.fade 
-{-webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;}
+ .fade 
+ {-webkit-animation-name: fade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: fade;
+ animation-duration: 1.5s;}
 
-@-webkit-keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}}
+ @-webkit-keyframes fade {
+ from {opacity: .4} 
+ to {opacity: 1}}
 
-@keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}}
+ @keyframes fade {
+ from {opacity: .4} 
+ to {opacity: 1}}
 
-@keyframes backgroundColorPalette {
-0% {
-background: #ee6055;
-}
-25% {
-background: #99d67b;
-}
-50% {
-background: #b7da45;
-}
-75% {
-background: #ffd97d;
-}
-100% {
-background: #ff9b85;
-}
+ @keyframes backgroundColorPalette {
+ 0% {
+ background: #ee6055;
+ }
+ 25% {
+ background: #99d67b;
+ }
+ 50% {
+ background: #b7da45;
+ }
+ 75% {
+ background: #ffd97d;
+ }
+ 100% {
+ background: #ff9b85;
+ }
 }

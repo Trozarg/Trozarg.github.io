@@ -1,35 +1,10 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/lt.css">
-        <link rel="stylesheet" href="https://www.fallbrooklemontech.com/css/basic.css">
-        <link rel="stylesheet" href="/home/trozarg/Documents/GitHub/trozarg.github.io/basic.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-        <script src="basic.js"></script>
-    </head>
-    <div id="body">
-        <div class="slideshow-container grid-container" id="#About">
-            <div class="mySlides fade">
-                <div class="container">
-                  </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="container">
-                  </div>
-            <div id="nav">
-            <div id="shadowBox" style="text-align: center;">
-                <a class="page" href="#Design" onclick="currentPage(1)">Design</a>
-                <a class="page" href="#Develop" onclick="currentPage(2)">Develop</a>
-                <a class="page" href="#Maintain" onclick="currentPage(3)">Maintain</a>
-                <a class="page" href="#Consult" onclick="currentPage(4)">Consult</a>
-            </div>
-        </div>
-<script>
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6"
+    },
+    "include": ["src/**/*"]
+  }
 var slideIndex = 1;
 showSlides(slideIndex);
 function currentSlide(n) {
@@ -88,6 +63,3 @@ iframe.style.display = "none";
 }
 }
 }
-</script>
-</div>
-</html>
