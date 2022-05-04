@@ -17,19 +17,20 @@
 
         <style>
 
-                  #body {color: rgb(40, 42, 49);
-                  background-color:aliceblue;
+            #body {color:aliceblue;
+                  background-color: rgb(31, 33, 39);
                   font-weight: bold;}
-                  #body, #header-title {color:rgb(40, 42, 49);}
+                  #body, #header-title #tag-line {color:aliceblue;}
 
                   #site-theme {
-                      position: relative;
-                      background-color: inherit;
-                      width:30%;
-                      margin:auto;
-                
-                  }
-				  
+                      width: auto;
+                      background-color: aliceblue;
+                      text-align: center;
+                }
+
+                #body #header-title #tag-line, a {
+                    color: aliceblue;
+                }
 
                   
 			/* The Modal (background) */
@@ -63,7 +64,7 @@
 
  .close:hover,
  .close:focus {
-	  			 color: #000;
+	  			 color: rgb(15, 15, 15);
 	  			 text-decoration: none;
 	  			 cursor: pointer;
 			   }
@@ -71,7 +72,7 @@
 			 /* Dropdown Button */
   .dropbtn {
   				 background-color: aliceblue;
-  				 color: rgb(31, 33, 39);
+  				 color: rgb(15, 15, 15);
   				 padding: 16px;
   				 font-size: 16px;
   				 border: none;
@@ -101,7 +102,7 @@
 
 			/* Links inside the dropdown */
 			   .dropdown-content a {
-  				 color: rgb(31, 33, 39);
+  				 color: rgb(15, 15, 15);
   				 padding: 12px 16px;
   				 text-decoration: none;
   				 display: block;
@@ -128,7 +129,7 @@
   #Light  {
                  color:aliceblue;
                  background-color: rgb(31, 33, 39);
-                 border:white 2px round;
+                 border:aliceblue 2px round;
                  margin:10px;
 				 font-family: inherit;
 			     font-size: 20px;
@@ -142,7 +143,7 @@
    #Dark {
                   color:aliceblue;
                   background-color:rgb(31, 33, 39);
-                  border:white 2px round;
+                  border:aliceblue 2px round;
                   margin:10px;
 			      font-family:inherit;
 				  font-size: 20px;
@@ -152,9 +153,9 @@
                   color:aliceblue;
                 }
 				
-   #footer {color:rgb(31, 33, 39);}
+   #footer {color:aliceblue;}
                   
-   #footer a {color:aliceblue;}
+   #footer a {color:rgb(31, 33, 39);}
             
    .grid-container {
                    display: inline-grid;
@@ -184,13 +185,13 @@
 				}
 				 
 	 button {
-				   background-color: rgb(31, 33, 39);
-				   color: aliceblue;
+				   background-color: aliceblue;
+				   color: rgb(31, 33, 39);
 				   border: .01px solid silver;
 				}
 				 
 	 a {
-				   color: aliceblue;
+				   color: rgb(31, 33, 39);
 				}
 				 
 	 .socialButton {
@@ -226,7 +227,6 @@
 				   padding-right: 10px;
 				   padding-top: 5px;
 				   padding-bottom: 5px;
-				   border: 2px solid rgb(31, 33, 39);
 				}
 				 
 	  #connect {
@@ -238,7 +238,6 @@
 				   padding-right: 10px;
 				   padding-top: 5px;
 				   padding-bottom: 5px;
-				   border: 2px solid rgb(31, 33, 39);
 				}
 				 
 			@media only screen and (min-width: 320px) and (max-width: 797px)
@@ -263,7 +262,7 @@
 	  			   }
 			 .dropbtn {
   				   background-color: aliceblue;
-  				   color: rgb(31, 33, 39);
+  				   color: rgb(15, 15, 15);
   				   padding: 10px;
   				   font-size: 16px;
   				   border: none;
@@ -288,7 +287,7 @@
                    height: 15px;
                    width: 15px;
                    margin: 0 2px;
-                   background-color: rgb(31, 33, 39);
+                   background-color: rgb(255, 255, 255);
                    border-radius: 50%;
                    display: inline-block;
                    transition: background-color 0.6s ease;
@@ -303,12 +302,12 @@
             </head>
          <!-- Main Content -->
          <div id="content">
-			<div id="site-theme"><button id="Color"><a href="https://www.fallbrooklemontech.com/index.html">Color</a></button><button id="Light"><a href="https://www.fallbrooklemontech.com/light.html">Light</a></button><button id="Dark"><a href="https://www.fallbrooklemontech.com/dark.html">Dark</a></button></div></div>
+			<div id="site-theme"><button id="Light"><a href="">Light</a></button><button id="Dark"><a href="">Dark</a></button></div></div>
 			</div>
 			   <div id="body" style="background-image:url('/pages/designs/Lilfoot/clouds.png');">
 			   <div id="header" class="lt-top lt-no-decoration lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10">
-			   <div id="header-title" class="lt-h4"><a href="#Home" style="color:rgb(31, 33, 39);">Fallbrook LemonTech</a><!-- <br><div id="tag-line" class="lt-small-text" ><a style="color:rgb(31, 33, 39);" href="#Mission"> Design </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Services"> Develop </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Cost"> Maintain </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Contact"> Consult </a><span><span style="color:aliceblue;">|</span></span>--></div>
-			   <div id="tag-line" class="lt-small-text" ><a style="color:rgb(31, 33, 39);" href="#About"> About </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Services"> Services </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Cost"> Cost </a><span style="color:aliceblue;">|</span><a style="color:rgb(31, 33, 39);" href="#Contact"> Contact </a><span style="color:aliceblue;">|</span><span id="os" class="lt-padding-left-5" style="color:rgb(31, 33, 39);"> Windows <span style="color:rgb(31, 33, 39);">|</span> MacOS <span style="color:rgb(31, 33, 39);">|</span> Linux</span></div>
+			   <div id="header-title" class="lt-h4"><a href="#Home" style="color:aliceblue;">Clark's Auto Salvage</a><!-- <br><div id="tag-line" class="lt-small-text" ><a style="color:rgb(15, 15, 15);" href="#Mission"> Design </a><span style="color:aliceblue;">|</span><a style="color:rgb(15, 15, 15);" href="#Services"> Develop </a><span style="color:aliceblue;">|</span><a style="color:rgb(15, 15, 15);" href="#Cost"> Maintain </a><span style="color:aliceblue;">|</span><a style="color:rgb(15, 15, 15);" href="#Contact"> Consult </a><span><span style="color:aliceblue;">|</span></span>--></div>
+                   <div id="tag-line" class="lt-small-text" ><a style="color:aliceblue;" href="#About"> About </a><span style="color:aliceblue;">|</span><a style="color:aliceblue;" href="#Services"> Services </a><span style="color:aliceblue;">|</span><a style="color:aliceblue;" href="#Cost"> Get Quote </a><span style="color:aliceblue;">|</span><a style="color:aliceblue;" href="#Contact"> Contact </a><span style="color:aliceblue;">|</span><br><span id="os" class="lt-padding-left-5" style="color:aliceblue;"> NEED A TOW? <span style="color:aliceblue;">|</span> WE GOT PARTS <span style="color:aliceblue;">|</span> PICKUP OR DROPOFF </span></div>
 			</div>
 			   
 			   
@@ -317,19 +316,14 @@
 			<!-- Content Begins -->
 			   
 			<div class="slideshow-container grid-container" id="#About">
-				<div class="mySlides fade"><div class="lt-h4" style="color:rgb(31, 33, 39);">Mission</div><div class="lt-text">
-				 To help make tech do what you want. 
-				 Design your vision, develop your site
-				 and broadcast your organization.</div></div>
-				<div class="mySlides fade"><div class="lt-h4" style="color:rgb(31, 33, 39);">Objective</div>
-				<div class="lt-text">
-				   To design, develop, and maintain sites,
-				   applications, programs and infastructure. 
-				   For personal or organizations use. </div></div>
-				<div class="mySlides fade"><div class="lt-h4" style="color:rgb(31, 33, 39);">LemonTech</div>
-				<div class="lt-text">
-				   Hi my name is James Lemon, I am a 31 year old cyborg.
-				   Let me develop tech that will work, for you.</div>
+				<div class="mySlides fade"><div class="lt-h4" style="color:aliceblue;">Mission</div>
+				<div class="lt-text" style="color:aliceblue;">
+		        Used car and truck parts at the best prices. Scrap Vehicles picked up, or brought in with proper documentation. Call us for all your vehicle needs, and If You Need A Tow, Call Joe!</div></div>
+				<div class="mySlides fade"><div class="lt-h4" style="color:aliceblue;">Objective</div>
+				<div class="lt-text" style="color:aliceblue;"></div></div>
+				<div class="mySlides fade"><div class="lt-h4" style="color:aliceblue;">LemonTech</div>
+				<div class="lt-text" style="color:aliceblue;">
+				</div>
 			</div>
 		   
 			   
@@ -343,11 +337,11 @@
    
 			   
 	   
-			<div id="Services" class="lt-margin-none lt-padding-top-20 lt-padding-left-20 lt-padding-right-20 lt-padding-bottom-10 lt-container">
-				  <div class="lt-h5" style="color:rgb(31, 33, 39); text-align:center; padding-bottom:20px; font-size:48px; ">Services</div>
+            <!-- <div id="Services" class="lt-margin-none lt-padding-top-20 lt-padding-left-20 lt-padding-right-20 lt-padding-bottom-10 lt-container">
+				  <div class="lt-h5" style="color:aliceblue; text-align:center; padding-bottom:20px; font-size:48px; ">Services</div>
 				  <div class="lt-text"></div>
-				  <div class="lt-h5" style="color:rgb(31, 33, 39);">Web</div>
-				  <div class="lt-small-text" style="color:rgb(31, 33, 39);">
+				  <div class="lt-h5" style="color:aliceblue;">Web</div>
+				  <div class="lt-small-text" style="color:aliceblue;">
 				  <ul>
 				  <li>Site Design</li>
 				  <li>Site Development</li>
@@ -355,11 +349,11 @@
 					  i.e. Google My Business | Facebook | Instagram | Twitter </li>
 				  <li>Remote Walkthroughs</li>
 				  </ul>
-				  </div>
+                  </div> 
 			   
 				  
-			<div class="lt-h5" style="color:rgb(31, 33, 39);">Desktop | Laptop | Macbook</div>
-				 <div class="lt-small-text" style="color:rgb(31, 33, 39);">
+			<div class="lt-h5" style="color:aliceblue;">Desktop | Laptop | Macbook</div>
+				 <div class="lt-small-text" style="color:aliceblue;">
 				   <ul>
 				   <li>Virus Removal</li>
 				   <li>Data Recovery</li>
@@ -367,54 +361,55 @@
 				   <li>Hardware Installation</li>
 				   </ul>
 				 </div>
-			</div>
+            </div> -->
 			   
    
 			<div id="Cost" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-10 lt-container">
-				 <div class="lt-h5" style="color:rgb(31, 33, 39); padding-bottom:20px; font-size:48px">Pricing</div>
-				   <div class="lt-small-text" style="color:rgb(31, 33, 39);">$25 an hour.</div>
-				   <div class="lt-h5">Consultation Included</div>
-				 <div class="lt-small-text" style="color:rgb(31, 33, 39);">
+				 <div class="lt-h5" style="color:aliceblue; padding-bottom:20px; font-size:48px">Pricing</div>
+				   <div class="lt-small-text" style="color:aliceblue;">Get A Quote</div>
+				   <div class="lt-h5"></div>
+				 <div class="lt-small-text" style="color:aliceblue;">
 				   <ul>
-					 <li>System Check</li>
-					 <li>Good for multiple services.</li>
-					 <li>Customer Call-back</li>
-					 <div class="lt-h5"><div id="call"><button id="callButton" type="button" name="button" style="font-family:inherit;"><a id="callText" href="tel:760.450.3194" alt="call phone number 760 450 3194">Call Now</a></button></div></div></div>
+					 <li>Need A Tow</li>
+					 <li>We Got Parts</li>
+					 <li>Got Junk? We Buy, Sell and Trade, dropoffs accepted, pick up available upon request.</li>
+					 <div class="lt-h5"><div id="call"><button id="callButton" type="button" name="button" style="font-family:inherit;"><a id="callText" href="tel:814.650.1906" alt="call phone number 8146501906">Call Now</a></button></div></div></div>
 				   </ul>
 			</div>
 					
 			<div id="Contact" class="lt-margin-none lt-padding-left-20 lt-padding-right-20 lt-padding-top-20 lt-padding-bottom-20 lt-container">
-				   <div class="lt-h5" style="color:rgb(31, 33, 39); font-size:48px">Contact</div>
+				   <div class="lt-h5" style="color:aliceblue; font-size:48px">Contact</div>
 				   <div class="lt-text"></div>
 				   <div class="lt-h5"><button id="myBtn" type="button" name="button" style="font-family:inherit;">Location</button></div>
 				   <div id="map" class="map">
 					 <span class="close">&times;</span>
-				   <iframe class="map-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.6370025168994!2d-117.15180825031292!3d33.32830426288638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db87bdf3698401%3A0x8a02c7dc960dde9c!2s5090%20Avocado%20Park%20Ln%2C%20Fallbrook%2C%20CA%2092028!5e0!3m2!1sen!2sus!4v1635355765654!5m2!1sen!2sus" width="297" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				   <iframe class="map-content" src="https://www.google.com/maps/place/Clark's+Auto+Salvage/@40.3676603,-78.4509648,17z/data=!3m1!4b1!4m5!3m4!1s0x89cbbd721c530835:0xb2c6d7fa28a09e88!8m2!3d40.3676775!4d-78.4487839z" width="297" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				   </div>
 				   <div class="dropdown"><button onclick="myFunction()" class="dropbtn lt-h5 " id="connect" style="font-family:inherit;">Connect</button>
 				   <div id="myDropdown"class="dropdown-content">
 					 <a href="mailto:lemonj103@gmail.com"><span style="font-size:18px;">Email </span> lemonj103@gmail.com</a>
-				   <div style="color:rgb(31, 33, 39);font-size:18px;padding-left:16px;padding-bottom: 5px;">
+				   <div style="color:rgb(15, 15, 15);font-size:18px;padding-left:16px;padding-bottom: 5px;">
 					   Mailing Address<br>
-					   James Lemon <br>
-					   5090 Avocado Park Lane<br>
-					   Fallbrook CA, 92028</div></div>
+					   Jesse Clark <br>
+                       243 Chevrolet Drive<br>
+                       East Freedom, PA 16637<br>
+                       United States<br>
+				        </div></div>
 			</div></div>
 				   
 			<!-- End of Main Content -->
 			<div id="footer" style="margin-left:10px;">
-					   <button class="socialButton" type="button" name="button" ><a href="https://www.facebook.com/james.lemon.12914">Facebook </a></button><button class="socialButton" type="button" name="button"><a href="https://www.twitter.com/_jameslemon" >Twitter </a></button><button class="socialButton" type="button" name="button" ><a href="https://www.instagram.com/_jameslemon" >Instagram </a></button>
+					   <button class="socialButton" type="button" name="button" ><a href="https://www.facebook.com/Clarks-Auto-Salvage-112149684657667">Facebook </a></button><button class="socialButton" type="button" name="button" ><a href="https://www.instagram.com/jclark1ao/?hl=en">Instagram </a></button>
 			   
-			<div alt="copyright 2021 fallbrook lemontech all 
-				rights reserved">© 2021 Fallbrook LemonTech | All rights reserved</div>
+			<div alt="copyright 2022 Clark's Auto Salvage  all 
+				rights reserved">© 2022 Clark's Auto Salvage | All rights reserved.</div>
 			</div></div>
 			   
 			<script>
 				var slideIndex = 1;
 				showSlides(slideIndex);
 			   
-				function currentSli:
-                de(n) {
+				function currentSlide(n) {
 				 showSlides(slideIndex = n);
 				}
 			   
@@ -484,6 +479,7 @@
 			 }
 			}
 	   
-	   </script>   
-   <!-- End of Site -->
+	   </script>  
+	   
+<!-- End of Site -->
 </html> 
