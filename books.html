@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>The Rustic Shelf Bookstore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="8kHr3jd3Z43q1ovwo0KVgo_NZKIEMjthBxti8m8fYTg">
+<link rel="icon" type="image/png" href="images/icons/TRSBooks.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:none;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+  text-decoration:none;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+      padding-bottom: 15em;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-decoration:none;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration:none;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  text-decoration:none;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration:none;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  text-decoration:none;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  text-decoration:none;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-decoration:none;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover.active {
+  background-color:#555;
+  color: white;
+  text-decoration:none;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  text-decoration:none;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  text-decoration:none;
+}
+
+.sidebar .icon {
+  display: none;
+  text-decoration:none;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar a:not(:first-child) {display: none;}
+  .sidebar a.icon {
+    float: right;
+    display: block;
+    text-decoration:none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar.responsive {position: relative;}
+  .sidebar.responsive .icon{
+    color:black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration:none;
+  }
+}
+
+
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    text-decoration:none;
+  }
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-decoration:none;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar a button {
+    text-align: center;
+    float: none;
+    text-decoration:none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar" id="mySidebar">
+  <a href="#home" class="active">Home</a>
+  <button href="#books" class="dropdown-btn">Books<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+          <button id="genre" class="dropdown-btn">Genres<i class="fa fa-caret-down"></i></button>
+       <button id="fiction" class="dropdown-btn">Fiction<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-container">
+              <a href="#">Science Fiction</a>
+              <a href="#">Fantasy</a>
+              <a href="#">Adventure</a>
+              <a href="#">Classic Literature</a>
+              <a href="#">Mystery</a>
+              <a href="#">Thriller</a>
+              <a href="#">Horror</a>
+            <a href="#">Historical Fiction</a>
+          <a href="#">Mythology</a>
+          </div>
+
+            <button id="nonfiction" class="dropdown-btn">Non-Fiction<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-container">
+              <a href="#">History</a>
+              <a href="#">Science</a>
+              <a href="#">Technology</a>
+              <a href="#">Political Science</a>
+              <a href="#">Education</a>
+              <a href="#">Culture</a>
+              <a href="#">Self-Help</a>
+              <a href="#">Religious & Spiritual</a>
+              <a href="#">How-to/Guide</a>
+              <a href="#">Nature</a>
+              <a href="#">Health</a>
+              <a href="#">Lifestyle</a>
+            <a href="#">Cooking</a>
+          <a href="#">Children</a>
+          </div>
+          </div>
+
+  <a href="#first-editions">First Editions</a>
+  <a href="#1st-printings">1st Printings</a>
+  <a href="#contact">Contact</a>
+  <a href="#shop">Shop on Ebay</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Header -->
+<div class="content">
+<div class="header " id="myHeader">
+    <h1>The Rustic Shelf Bookstore</h1>
+    <h2>Used Indie Bookstore</h2>
+      <p>Used books - Fiction - Non-Fiction</p>
+    <h3>Collection of, First editions, 1st Printing, and signed by author copies.</h3>
+</div>
+
+<div class="row">
+  <div class="column" style="max-width:600px">
+    <div class="card" >
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 2</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 5</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 6</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 7</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 8</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 9</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 10</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 11</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 12</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 13</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 14</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 15</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column" style="max-width:600px">
+    <div class="card">
+      <img src="images/images/hpst1c.jpg" style="max-width:100%;"/>
+      <h3>Card 16</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+</div>
+  
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+  
+  <div class="w3-col margin-left:20px;">
+    <a class="fa fa-facebook-official w3-hover-opacity w3-large"></a>
+    <a class="fa fa-instagram w3-hover-opacity w3-large"></a>    
+    <a class="fa fa-twitter w3-hover-opacity w3-large"></a>
+    <a class="fab fa-tiktok w3-hover-opacity w3-large"></a>
+    <a class="fa fa-linkedin w3-hover-opacity w3-large"></a>
+  </div>
+
+  <div class="w3-center w3-padding-24">
+   <p>Powered by <span><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity" style="text-decoration:none;"></a></span>w3.css</a></p>
+    
+<p>Copyright 2023 © <a href="https://www.ebay.com/usr/the-rustic-shelf" style="text-decoration:none;" style="text-decoration:none;">The Rustic Shelf Bookstore</a>. All Rights Reserved.</p>
+	<p><a href="https://www.ebay.com/usr/the-rustic-shelf" style="text-decoration:none;">TRSBooks™</a> is a trademark of The Rustic Shelf Bookstore.</p>
+    <i style="font-size:24px;">Found on <img src="images/images/ebay.png"> <a class="w3-hover-opacity" href="https://www.ebay.com/usr/the-rustic-shelf" style="text-decoration:none;"> @the-rustic-shelf.</a></i>
+  </div>
+
+</footer>
+</div>
+</body>
+<script>
+(function(w, d, e, u, c, g, a, b){
+w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {ss_cid : c, domain_info: g};
+    a = d.createElement(e);
+    a.async = true;
+    a.src = u;
+    b = d.getElementsByTagName(e)[0];
+    b.parentNode.insertBefore(a, b);
+  })(window,document,"script","https://ir.ebaystatic.com/rs/v/dxtuvtkk2q3hpkc1xveeo13iaek.js","bjp5","auto");
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("mySidebar");
+  if (x.className === "sidebar") {
+    x.className += " responsive";
+  } else {
+    x.className = "sidebar";
+  }
+} 
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}   
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+          </html>
